@@ -1,0 +1,1127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trippbo</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.png"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">		
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">		
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="wrapper-full">
+            <div class="flex space-between vcenter flex-wrap">
+                <button class="icon" onclick="myFunction()">
+                    <img src="image/hamburger.svg" style="height: 16px;" />
+                </button>
+                <a href="/" class="brand">
+                    <img src="image/trippbo-logo.png">
+                </a>
+                <div class="menus">
+                    <a href="#">BOOK A TRIP</a>
+                    <a href="#">FUND MY TRIP</a>
+                    <a href="#">FUND MY TRIP <span>SOLO</span></a>
+                    <a href="#">TICKETS LOTTERY</a>
+                </div>
+                <div class="headerOpt-right">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/bell.svg">
+                            </a>
+                        </li>
+                        <li class="messages">
+                            <a href="javascript:void(0)">
+                                Messages
+                            </a>
+                        </li>
+                        <li class="avatar">
+                            <a href="javascript:void(0)">
+                                Ahmad <img src="image/caret-down-white.svg" style="height:14px">
+                            </a>
+                            <img src="image/prof-img.png" class="avatar_rounded">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+        <section>
+            <div class="wrapper">
+                <div class="breadcrumb_">
+                    <ol class="">
+                        <li class="breadcrumb-item">
+                            <a>Hotel</a>
+                        </li>
+                        <li class="breadcrumb-item active">Things to do</li>
+                    </ol>
+                </div>
+                <div class="form-group row px-2">
+                    <div class="col-sm-6 px-1 mb-2">
+                        <div class="position-relative inputField-box">
+                            <i class="fa fa-map-marker" aria-hidden="true"></i>
+                            <input type="text" class="inputField inputField-withicon" placeholder="Description" />
+                        </div>
+                    </div>
+                    <div class="col-sm-2 px-1 mb-2">
+                        <div class="position-relative inputField-box">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <input type="text" id="DateFrom" class="inputField inputField-withicon" placeholder="From">                 
+                        </div>
+                    </div>
+                    <div class="col-sm-2 px-1 mb-2">
+                        <div class="position-relative inputField-box">
+                            <i class="fa fa-calendar" aria-hidden="true"></i>
+                            <input type="text" id="DateTo" class="inputField inputField-withicon" placeholder="To">                 
+                        </div>
+                    </div>
+                    <div class="col-sm-2 px-1 mb-2">
+                        <button class="btn_search">
+                            Search
+                        </button>
+                    </div>
+                </div>
+
+
+                <div class="column-holder">
+                    <!-- left -->
+                    
+                    
+                    <div class="column-medium-4 sidebar">
+                        
+                        <div class="pb-4 pt-3 filter-button">
+                            <button class="wv-100 btn btn-outline-secondary"  data-toggle="modal" data-target="#filter"><i class="fa fa-list" aria-hidden="true"></i> Sort & Filter</button>
+                        </div>
+                        <div class="filter-section">
+                            <div class="mb-2 search-section">
+                                <div class="mb-2">Search for an activity</div>
+                                <div class="position-relative inputField-box mb-2">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                    <input type="text" class="inputField inputField-withicon" placeholder="Enter a keyword" />
+                                </div>
+                            </div>
+                            
+                            <div class="pb-4 pt-3 section">
+                                <h3 class="title">Filter By</h3>
+                                <div class="desc pb-2">Cleaning and safety divractices</div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                    <label class="form-check-label font-13" >
+                                        Enhanced cleaning <br>
+                                        Activity suppliers taking additional steps to clean and sanitize
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="pb-4 pt-3 section">
+                                <h3 class="title">Traveler rating</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="radio" value="option1" checked>
+                                    <label class="form-check-label font-13" >
+                                        Any
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="radio" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        Wonderful 4.5+
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="radio" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        Very good 4+
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="radio" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        Good 3.5+
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="pb-4 pt-3 section">
+                                <h3 class="title">Recommendations</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                    <label class="form-check-label font-13" >
+                                        Free cancellation
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        Deals
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        Local expert picks
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        Family friendly
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        New on Trippbo
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        Selective hotel pickup
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="pb-4 pt-3 section">
+                                <h3 class="title">Your budget</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                    <label class="form-check-label font-13" >
+                                        Less than $75
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        $75 to $125
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        $125 to $200
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        $200 to $300
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        Greater than $300
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="pb-4 pt-3 section">
+                                <h3 class="title">Start time</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                    <label class="form-check-label font-13" >
+                                        6:00am - 12:00pm (morning)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        12:00pm - 5:00pm (afternoon)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        5:00pm - 12:00am (evening)
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        Any time
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="pb-4 pt-3 section">
+                                <h3 class="title">Duration</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                    <label class="form-check-label font-13" >
+                                        Less than 1 hour
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        1 to 4 hours
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        4 hours to 1 day
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                    <label class="form-check-label font-13" >
+                                        More than 1 day
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="pb-4 pt-3 section">
+                                <h3 class="title">Tours & activities</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                    <label class="form-check-label font-13" >
+                                        Tours & day trips
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Private & custom tours
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Water activities
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Cruises & boat tours
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Air, helicopter & balloon tours
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Winter activities
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Holiday & seasonal tours
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="pb-4 pt-3 section">
+                                <h3 class="title">Tickets</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                    <label class="form-check-label font-13" >
+                                        Attractions
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Transportation
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Theme parks
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Shows & concerts
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <div class="pb-4 pt-3 section mb-3">
+                                <h3 class="title">Interests</h3>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                    <label class="form-check-label font-13" >
+                                        Adventure & outdoor
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        History & culture
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Wildlife & nature
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Food, drink & nightlife
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Shopping & fashion
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Classes & workshops
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Weddings & honeymoons
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                    <label class="form-check-label font-13" >
+                                        Spa & wellness
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- right -->
+                    <div class="column-medium-8 paddingleft-medium-1">
+                        <div class="rightBody">
+                            <div class="row px-2 mb-3">
+                                <div class="col-sm-12 dubai">
+                                    <div class="bbb_viewed_title_container">
+                                        <div class="bbb_viewed_nav_container p-3 mb-4">
+                                            <span class="float-left title">Dubai</span>
+                                            <span class="bbb_viewed_nav bbb_viewed_next float-right"><image src="image/right-arrow.svg"/></span>
+                                        </div>
+                                    </div>
+                                    <div class="bbb_viewed_slider_container px-3">
+                                        <div class="owl-carousel owl-theme bbb_viewed_slider me-2">
+                                            <div class="owl-items">
+                                                <div class="bbb_viewed_item discount">
+                                                    <div class="product">
+                                                        <div class="title mb-3">
+                                                            Tours and Day Trip
+                                                        </div>
+                                                        <div class="footer-letter">
+                                                            20 things to do
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="owl-items">
+                                                <div class="bbb_viewed_item discount">
+                                                    <div class="product">
+                                                        <div class="title mb-3">
+                                                            Tours and Day Trip
+                                                        </div>
+                                                        <div class="footer-letter">
+                                                            20 things to do
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mb-3">
+                                <div class="col-sm-7">
+                                    
+                                </div>
+                                <div class="col-sm-5">
+                                    <div class="position-relative inputField-box">
+                                        <select class="inputField recommend">
+                                            <option value="1" selected>recommend</option>
+                                            <option value="2"></option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row product-section-title mb-2">
+                                <div class="col">
+                                    <div class=" float-left">
+                                        Top 10 things to do
+                                    </div>
+                                    <div class=" float-right">
+                                        Top 10 things to do
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="row mb-4">
+                                <div class="col-12 pl-1">
+                                    <div class="bbb_viewed_title_container">
+                                        <div class="bbb_viewed_nav_container">
+                                            <span class="bbb_viewed_nav bbb_viewed_next_card float-right"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
+                                        </div>
+                                    </div>
+                                    <div class="bbb_viewed_slider_container_card">
+                                        <div class="owl-carousel owl-theme bbb_viewed_slider_card">
+                                            <div class="card-item">
+                                                <div class="card p-1">
+                                                    <img src="image/image1.png" class="card-img-top" alt="...">
+                                                    <img src="image/heart.png" class="card-heart"/>
+                                                    <div class="card-body p-2">
+                                                        <div class="card-title mb-1"><img class="d-inline" src="image/clean.svg"/><span class=" d-inline"> Enhanced Cleaning</span></div>
+                                                        <div class="card-text mb-1">Some quick examdile text to build on the card title and make up the bulk of the card's content.</div>
+                                                        <div class="card-time mb-1"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours</div>
+                                                        <div class="card-mark mb-1">4.7/5<span class="card-review"> (50) <spain></div>
+                                                        <div class="card-foot mb-1">
+                                                            <div class="float-left cancel">Free Cancelation</div>
+                                                            <div class="price float-right"><b>$40</b> / Adult</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card p-1">
+                                                    <img src="image/image2.png" class="card-img-top" alt="...">
+                                                    <img src="image/heart.png" class="card-heart"/>
+                                                    <div class="card-body p-2">
+                                                        <div class="card-title mb-1"><img class="d-inline" src="image/clean.svg"/><span class=" d-inline"> Enhanced Cleaning</span></div>
+                                                        <div class="card-text mb-1">Some quick examdile text to build on the card title and make up the bulk of the card's content.</div>
+                                                        <div class="card-time mb-1"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours</div>
+                                                        <div class="card-mark mb-1">4.7/5<span class="card-review"> (50) <spain></div>
+                                                        <div class="card-foot mb-1">
+                                                            <div class="float-left cancel">Free Cancelation</div>
+                                                            <div class="price float-right"><b>$40</b> / Adult</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="card-item">
+                                                <div class="card p-1">
+                                                    <img src="image/image3.png" class="card-img-top" alt="...">
+                                                    <img src="image/heart.png" class="card-heart"/>
+                                                    <div class="card-body p-2">
+                                                        <div class="card-title mb-1"><img class="d-inline" src="image/clean.svg"/><span class=" d-inline"> Enhanced Cleaning</span></div>
+                                                        <div class="card-text mb-1">Some quick examdile text to build on the card title and make up the bulk of the card's content.</div>
+                                                        <div class="card-time mb-1"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours</div>
+                                                        <div class="card-mark mb-1">4.7/5<span class="card-review"> (50) <spain></div>
+                                                        <div class="card-foot mb-1">
+                                                            <div class="float-left cancel">Free Cancelation</div>
+                                                            <div class="price float-right"><b>$40</b> / Adult</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row product-section-title mb-2">
+                                <div class="col">
+                                    <div class="float-left">
+                                        Day trips
+                                    </div>
+                                </div>  
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+                                    <div class="card p-1">
+                                        <img src="image/image1.png" class="card-img-top" alt="...">
+                                        <img src="image/heart.png" class="card-heart"/>
+                                        <div class="card-body p-2">
+                                            <div class="card-title mb-1"><img src="image/clean.svg"/> Enhanced Cleaning</div>
+                                            <div class="card-text mb-1">Some quick examdile text to build on the card title and make up the bulk of the card's content.</div>
+                                            <div class="card-time mb-1"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours</div>
+                                            <div class="card-mark mb-1">4.7/5<span class="card-review"> (50) <spain></div>
+                                            <div class="card-foot mb-1">
+                                                <div class="float-left cancel">Free Cancelation</div>
+                                                <div class="price float-right"><b>$40</b> / Adult</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+                                    <div class="card p-1">
+                                        <img src="image/image2.png" class="card-img-top" alt="...">
+                                        <img src="image/heart.png" class="card-heart"/>
+                                        <div class="card-body p-2">
+                                            <div class="card-title mb-1"><img src="image/clean.svg"/> Enhanced Cleaning</div>
+                                            <div class="card-text mb-1">Some quick examdile text to build on the card title and make up the bulk of the card's content.</div>
+                                            <div class="card-time mb-1"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours</div>
+                                            <div class="card-mark mb-1">4.7/5<span class="card-review"> (50) <spain></div>
+                                            <div class="card-foot mb-1">
+                                                <div class="float-left cancel">Free Cancelation</div>
+                                                <div class="price float-right"><b>$40</b> / Adult</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+                                    <div class="card p-1">
+                                        <img src="image/image3.png" class="card-img-top" alt="...">
+                                        <img src="image/heart.png" class="card-heart"/>
+                                        <div class="card-body p-2">
+                                            <div class="card-title mb-1"><img src="image/clean.svg"/> Enhanced Cleaning</div>
+                                            <div class="card-text mb-1">Some quick examdile text to build on the card title and make up the bulk of the card's content.</div>
+                                            <div class="card-time mb-1"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours</div>
+                                            <div class="card-mark mb-1">4.7/5<span class="card-review"> (50) <spain></div>
+                                            <div class="card-foot mb-1">
+                                                <div class="float-left cancel">Free Cancelation</div>
+                                                <div class="price float-right"><b>$40</b> / Adult</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+                                    <div class="card p-1">
+                                        <img src="image/image1.png" class="card-img-top" alt="...">
+                                        <img src="image/heart.png" class="card-heart"/>
+                                        <div class="card-body p-2">
+                                            <div class="card-title mb-1"><img src="image/clean.svg"/> Enhanced Cleaning</div>
+                                            <div class="card-text mb-1">Some quick examdile text to build on the card title and make up the bulk of the card's content.</div>
+                                            <div class="card-time mb-1"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours</div>
+                                            <div class="card-mark mb-1">4.7/5<span class="card-review"> (50) <spain></div>
+                                            <div class="card-foot mb-1">
+                                                <div class="float-left cancel">Free Cancelation</div>
+                                                <div class="price float-right"><b>$40</b> / Adult</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+                                    <div class="card p-1">
+                                        <img src="image/image2.png" class="card-img-top" alt="...">
+                                        <img src="image/heart.png" class="card-heart"/>
+                                        <div class="card-body p-2">
+                                            <div class="card-title mb-1"><img src="image/clean.svg"/> Enhanced Cleaning</div>
+                                            <div class="card-text mb-1">Some quick examdile text to build on the card title and make up the bulk of the card's content.</div>
+                                            <div class="card-time mb-1"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours</div>
+                                            <div class="card-mark mb-1">4.7/5<span class="card-review"> (50) <spain></div>
+                                            <div class="card-foot mb-1">
+                                                <div class="float-left cancel">Free Cancelation</div>
+                                                <div class="price float-right"><b>$40</b> / Adult</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+                                    <div class="card p-1">
+                                        <img src="image/image3.png" class="card-img-top" alt="...">
+                                        <img src="image/heart.png" class="card-heart"/>
+                                        <div class="card-body p-2">
+                                            <div class="card-title mb-1"><img src="image/clean.svg"/> Enhanced Cleaning</div>
+                                            <div class="card-text mb-1">Some quick examdile text to build on the card title and make up the bulk of the card's content.</div>
+                                            <div class="card-time mb-1"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours</div>
+                                            <div class="card-mark mb-1">4.7/5<span class="card-review"> (50) <spain></div>
+                                            <div class="card-foot mb-1">
+                                                <div class="float-left cancel">Free Cancelation</div>
+                                                <div class="price float-right"><b>$40</b> / Adult</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+                                    <div class="card p-1">
+                                        <img src="image/image1.png" class="card-img-top" alt="...">
+                                        <img src="image/heart.png" class="card-heart"/>
+                                        <div class="card-body p-2">
+                                            <div class="card-title mb-1"><img src="image/clean.svg"/> Enhanced Cleaning</div>
+                                            <div class="card-text mb-1">Some quick examdile text to build on the card title and make up the bulk of the card's content.</div>
+                                            <div class="card-time mb-1"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours</div>
+                                            <div class="card-mark mb-1">4.7/5<span class="card-review"> (50) <spain></div>
+                                            <div class="card-foot mb-1">
+                                                <div class="float-left cancel">Free Cancelation</div>
+                                                <div class="price float-right"><b>$40</b> / Adult</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+                                    <div class="card p-1">
+                                        <img src="image/image2.png" class="card-img-top" alt="...">
+                                        <img src="image/heart.png" class="card-heart"/>
+                                        <div class="card-body p-2">
+                                            <div class="card-title mb-1"><img src="image/clean.svg"/> Enhanced Cleaning</div>
+                                            <div class="card-text mb-1">Some quick examdile text to build on the card title and make up the bulk of the card's content.</div>
+                                            <div class="card-time mb-1"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours</div>
+                                            <div class="card-mark mb-1">4.7/5<span class="card-review"> (50) <spain></div>
+                                            <div class="card-foot mb-1">
+                                                <div class="float-left cancel">Free Cancelation</div>
+                                                <div class="price float-right"><b>$40</b> / Adult</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-6 col-lg-4 p-1">
+                                    <div class="card p-1">
+                                        <img src="image/image3.png" class="card-img-top" alt="...">
+                                        <img src="image/heart.png" class="card-heart"/>
+                                        <div class="card-body p-2">
+                                            <div class="card-title mb-1"><img src="image/clean.svg"/> Enhanced Cleaning</div>
+                                            <div class="card-text mb-1">Some quick examdile text to build on the card title and make up the bulk of the card's content.</div>
+                                            <div class="card-time mb-1"><i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours</div>
+                                            <div class="card-mark mb-1">4.7/5<span class="card-review"> (50) <spain></div>
+                                            <div class="card-foot mb-1">
+                                                <div class="float-left cancel">Free Cancelation</div>
+                                                <div class="price float-right"><b>$40</b> / Adult</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row mt-3 mb-5">
+                                <div class="col d-flex justify-content-center">
+                                    <button class="btn view_all">
+                                        View all activities
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="wrapper">
+                <div class="column-holder">
+                    <div class="column-medium-6">
+                        <div class="footer-logo">
+                            <img src="image/trippbo-white.svg" />
+                        </div>
+
+                        <div class="social-links margintop-3">
+                            <a href="javascript:void(0)">
+                                <img src="image/fb-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)" class="marginhor-3">
+                                <img src="image/insta-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="image/linkedin-white.svg" style="height: 40px;" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4>
+                            Menu
+                        </h4>
+                        <ul>
+                            <li>
+                                Conditions
+                            </li>
+                            <li>
+                                Privacy Policy
+                            </li>
+                            <li>
+                                About Us
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4>
+                            Popular Cities
+                        </h4>
+                        <ul>
+                            <li class="inline-block half-width">
+                                Thailand
+                            </li>
+                            <li class="inline-block half-width">
+                                Thailand
+                            </li>
+                            <li class="inline-block half-width">
+                                Norway
+                            </li>
+                            <li class="inline-block half-width">
+                                Norway
+                            </li>
+                            <li class="inline-block half-width">
+                                Pakistan
+                            </li>
+                            <li class="inline-block half-width">
+                                Pakistan
+                            </li>
+                            <li class="inline-block half-width">
+                                Dubai
+                            </li>
+                            <li class="inline-block half-width">
+                                Dubai
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="wrapper">
+                    <div class="column-holder">
+                        <div class="column-medium-6">
+                            <p>
+                                Subscribe our Newsletter
+                            </p>
+                            <div class="position-relative newsletter">
+                                <input type="email" placeholder="Email" />
+                                <button>
+                                    Subscribe
+                                </button>
+                            </div>
+                        </div>
+                        <div class="column-medium-6 margintop-3 margintop-medium-0" style="align-self: flex-end;">
+                            © trippbo.com, Inc. All rights reserved 2021.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- modal -->
+        <div class="modal fade p-0 m-0" id="filter">
+            <div class="modal-xl modal-dialog-filter modal-dialog ">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Sort & Filter</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                    <div class="column-medium-4 sidebar">
+                        <div class="mb-2 search-section">
+                            <div class="mb-2">Search for an activity</div>
+                            <div class="position-relative inputField-box mb-2">
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                                <input type="text" class="inputField inputField-withicon" placeholder="Enter a keyword" />
+                            </div>
+                        </div>
+                        
+                        <div class="pb-4 pt-3 section">
+                            <h3 class="title">Filter By</h3>
+                            <div class="desc pb-2">Cleaning and safety divractices</div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                <label class="form-check-label font-13" >
+                                    Enhanced cleaning <br>
+                                    Activity suppliers taking additional steps to clean and sanitize
+                                </label>
+                              </div>
+                        </div>
+
+                        <div class="pb-4 pt-3 section">
+                            <h3 class="title">Traveler rating</h3>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="radio" value="option1" checked>
+                                <label class="form-check-label font-13" >
+                                    Any
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="radio" value="option1">
+                                <label class="form-check-label font-13" >
+                                    Wonderful 4.5+
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="radio" value="option1">
+                                <label class="form-check-label font-13" >
+                                    Very good 4+
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="radio" value="option1">
+                                <label class="form-check-label font-13" >
+                                    Good 3.5+
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="pb-4 pt-3 section">
+                            <h3 class="title">Recommendations</h3>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                <label class="form-check-label font-13" >
+                                    Free cancellation
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    Deals
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    Local expert picks
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    Family friendly
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    New on Trippbo
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    Selective hotel pickup
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="pb-4 pt-3 section">
+                            <h3 class="title">Your budget</h3>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                <label class="form-check-label font-13" >
+                                    Less than $75
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    $75 to $125
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    $125 to $200
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    $200 to $300
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    Greater than $300
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="pb-4 pt-3 section">
+                            <h3 class="title">Start time</h3>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                <label class="form-check-label font-13" >
+                                    6:00am - 12:00pm (morning)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    12:00pm - 5:00pm (afternoon)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    5:00pm - 12:00am (evening)
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    Any time
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="pb-4 pt-3 section">
+                            <h3 class="title">Duration</h3>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                <label class="form-check-label font-13" >
+                                    Less than 1 hour
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    1 to 4 hours
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    4 hours to 1 day
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1">
+                                <label class="form-check-label font-13" >
+                                    More than 1 day
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="pb-4 pt-3 section">
+                            <h3 class="title">Tours & activities</h3>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                <label class="form-check-label font-13" >
+                                    Tours & day trips
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Private & custom tours
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Water activities
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Cruises & boat tours
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Air, helicopter & balloon tours
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Winter activities
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Holiday & seasonal tours
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="pb-4 pt-3 section">
+                            <h3 class="title">Tickets</h3>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                <label class="form-check-label font-13" >
+                                    Attractions
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Transportation
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Theme parks
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Shows & concerts
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="pb-4 pt-3 section mb-3">
+                            <h3 class="title">Interests</h3>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" checked>
+                                <label class="form-check-label font-13" >
+                                    Adventure & outdoor
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    History & culture
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Wildlife & nature
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Food, drink & nightlife
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Shopping & fashion
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Classes & workshops
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Weddings & honeymoons
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input text-dark" type="checkbox" value="option1" >
+                                <label class="form-check-label font-13" >
+                                    Spa & wellness
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="filter-modal-done">
+                  <button type="button" class="btn btn-primary wv-100"  data-dismiss="modal">Done</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script>      	
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.2.1/owl.carousel.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+</html>

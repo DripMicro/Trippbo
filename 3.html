@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trippbo</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.png"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="wrapper-full">
+            <div class="flex space-between vcenter flex-wrap">
+                <button class="icon" onclick="myFunction()">
+                    <img src="image/hamburger.svg" style="height: 16px;" />
+                </button>
+                <a href="/" class="brand">
+                    <img src="image/trippbo-logo.png">
+                </a>
+                <div class="menus">
+                    <a href="#">BOOK A TRIP</a>
+                    <a href="#">FUND MY TRIP</a>
+                    <a href="#">FUND MY TRIP <span>SOLO</span></a>
+                    <a href="#">TICKETS LOTTERY</a>
+                </div>
+                <div class="headerOpt-right">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/bell.svg">
+                            </a>
+                        </li>
+                        <li class="messages">
+                            <a href="javascript:void(0)">
+                                Messages
+                            </a>
+                        </li>
+                        <li class="avatar">
+                            <a href="javascript:void(0)">
+                                Ahmad <img src="image/caret-down-white.svg" style="height:14px">
+                            </a>
+                            <img src="image/prof-img.png" class="avatar_rounded">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-content px-1">
+        <section class="mb-5 pb-5">
+            <div class="wrapper">
+                <div class="breadcrumb_">
+                    <ol class="">
+                        <li class="breadcrumb-item">
+                            <a>Hotel</a>
+                        </li>
+                        <li class="breadcrumb-item active">Review and check out</li>
+                    </ol>
+                    <div class="row pt-3">
+                        <div class="col-12  d-flex flex-row">
+                            <span><</span>
+                            <h4 class="gilroy-medium pl-3 font-weight-bold">Secure booking — only takes 2 minutes!</h4>
+                        </div>
+                    </div>
+
+                    <div class="row pl-4">
+                        <div class="col-12 ">
+                            <div class="row">
+                                <div class="col-12 toast-full">
+                                    <div class="toast toast-full d-flex flex-row" data-autohide="false">
+                                        <div class="warinng pl-1">
+                                            <i class="fa fa-warning font-20 text-white"></i>
+                                        </div>
+                                        <div class="wv-100">
+                                            <div class="d-flex justify-content-between">
+                                                <div class="text-white font-12">COVID-19 alert: Travel requirements are changing rapidly, including need for pre-travel COVID-19 testing and quarantine on arrival.</div>
+                                                <div><button type="button" class="close" data-dismiss="toast">Dismiss</button></div>
+                                            </div>
+                                            <div class="toast-body px-0 pb-0">
+                                                <a class="font-12 text-white gilroy-medium">Check restrictions for your trip</a>
+                                            </div>
+                                        </div>
+                                      </div>
+                                </div>
+                                <div class="col-12 pt-2">
+                                    <div class="font-12 pink ">
+                                        <img src="image/red-double-check.png" width="17"/> 
+                                        Free cancellation before <a class="font-weight-bold pink"><u>Wed, Oct 13</u></a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row px-2 pt-2">
+                                <div class="col-sm-12 col-md-7 pb-2 px-3">
+                                    <div class="row">
+                                        <div class="section-2 px-3">
+                                            <div class="row pt-3">
+                                                <div class="col-12">
+                                                    <h4 class="font-weight-bold gilroy-medium">Who's traveling?</h4>
+                                                    <div class="font-13">Traveler names must match government-issued photo ID exactly.</div>
+                                                </div>
+                                                </div>
+                                            <div class="row px-2">
+                                                <div class="col-sm-12 col-md-4 pt-4 px-1">
+                                                    <input type="text" class="form-control input-control" placeholder="First name">
+                                                </div>
+                                                <div class="col-sm-12 col-md-4 pt-4 px-1">
+                                                    <input type="text" class="form-control input-control" placeholder="Middle name">
+                                                </div>
+                                                <div class="col-sm-12 col-md-4 pt-4 px-1">
+                                                    <input type="text" class="form-control input-control" placeholder="Last name">
+                                                </div>
+                                                <div class="col-sm-12 pt-4 px-1">
+                                                    <select class="form-control input-control">
+                                                        <option value="" selected disabled>Select Country</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-sm-12 pt-4 px-1">
+                                                    <input type="text" class="form-control input-control" placeholder="Phone Number">
+                                                </div>
+                                                <div class="col-sm-12 pt-4 px-1">
+                                                    <select class="form-control input-control">
+                                                        <option value="" selected disabled>Select Country</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-1">
+                                                <div class="col-12 pt-4">
+                                                    <div class="gilroy-medium font-18">Free Cancelation</div>
+                                                    <div class="font-13">Your tour operator can pick you up from your arrival location or hotel</div>
+                                                </div>
+                                                <div class="col-12 pt-3 gilroy-medium">
+                                                    <div class="font-13">pick up from</div>
+                                                    <div class="pt-2">
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="rd_1" name="rd" class="custom-control-input" checked> 
+                                                            <label class="custom-control-label red" for="rd_1">Arrival pickup location</label>
+                                                          </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="rd_2" name="rd" class="custom-control-input">
+                                                            <label class="custom-control-label red" for="rd_2">Hotel</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="rd_2" name="rd" class="custom-control-input">
+                                                            <label class="custom-control-label red" for="rd_2">Don't need pickup for this activity</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 pt-3 gilroy-medium">
+                                                    <div class="font-13">You are arriving by*</div>
+                                                    <div class="pt-2">
+                                                        <select class="form-control input-control">
+                                                            <option selected disabled>Select Mode</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-3">
+                                                <div class="col-12 pt-3">
+                                                    <div class="gilroy-medium font-18">Dropoff Information</div>
+                                                    <div class="font-13">Your tour operator can pick you up from your arrival location or hotel</div>
+                                                </div>
+                                                <div class="col-12 pt-3 gilroy-medium">
+                                                    <div class="font-13">pick up from</div>
+                                                    <div class="pt-2">
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="rd_1" name="rd" class="custom-control-input" checked> 
+                                                            <label class="custom-control-label red" for="rd_1">Arrival pickup location</label>
+                                                          </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="rd_2" name="rd" class="custom-control-input">
+                                                            <label class="custom-control-label red" for="rd_2">Hotel</label>
+                                                        </div>
+                                                        <div class="custom-control custom-radio custom-control-inline">
+                                                            <input type="radio" id="rd_2" name="rd" class="custom-control-input">
+                                                            <label class="custom-control-label red" for="rd_2">Don't need pickup for this activity</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 pt-3 gilroy-medium">
+                                                    <div class="font-13">You are arriving by*</div>
+                                                    <div class="pt-2">
+                                                        <input type="text" class="form-control input-control" placeholder="Phone Number">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="section-2 px-3">
+                                            <div class="row pt-3">
+                                                <div class="col-12">
+                                                    <h4 class="font-weight-bold gilroy-medium">How would you like to pay?</h4>
+                                                    <div class="font-13 pt-1"><img src="image/double-check.svg" width="17"/> We use secure transmission</div>
+                                                    <div class="font-13 pt-1"><img src="image/double-check.svg" width="17"/> We protect your personal information</div>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-3">
+                                                <div class="col-12 pt-4">
+                                                    <h4 class="font-weight-bold gilroy-medium">Pay with</h4>
+                                                    <div class="font-13">Traveler names must match government-issued photo ID exactly.</div>
+                                                </div>
+                                                <div class="col-12 pt-3  px-1">
+                                                    <div class="nav-title gilroy-medium">
+                                                        <ul class="nav nav-tabs pl-2 gilroy-semi">
+                                                            <li class="nav-item">
+                                                                <a class="nav-link active px-2 font-12" data-toggle="tab" href="#menu1"><img src="image/card.svg" width="18px"/>&nbsp; Credit / Debit Card</a>
+                                                            </li>
+                                                            <li class="nav-item ml-3">
+                                                                <a class="nav-link px-2 font-12" data-toggle="tab" href="#menu2"><img src="image/paypal.svg" width="18px"/>&nbsp; Check Availability</a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    
+                                                    <div class="nav-body">
+                                                        <div class="tab-content">
+                                                            <div id="menu1" class="container tab-pane active">
+                                                                <div class="row px-3">
+                                                                    <div class="col-sm-12 pt-3 px-1">
+                                                                        <input type="text" class="form-control input-control" placeholder="Card Number">
+                                                                    </div>
+                                                                    <div class="col-sm-6 pt-3 pb-5 px-1">
+                                                                        <div>
+                                                                            <div class="input-right-image">
+                                                                                <input type="text" class="form-control input-control" placeholder="Card Number">
+                                                                                <img src="image/expiration.png" width="15"/>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-sm-6 pt-3 px-1">
+                                                                        <input type="text" class="form-control input-control" placeholder="CW">
+                                                                    </div>
+                                                                    <div class="col-sm-12 pt-3 px-1 px-1">
+                                                                        <select class="form-control input-control">
+                                                                            <option value="" selected disabled>Country/Territory Code</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-sm-12 pt-3 px-1">
+                                                                        <input type="text" class="form-control input-control" placeholder="Billing address 1">
+                                                                    </div>
+                                                                    <div class="col-sm-12 pt-3 px-1">
+                                                                        <input type="text" class="form-control input-control" placeholder="Billing address 2">
+                                                                    </div>
+                                                                    <div class="col-sm-6 pt-3 px-1">
+                                                                        <input type="text" class="form-control input-control" placeholder="City">
+                                                                    </div>
+                                                                    <div class="col-sm-6 pt-3 px-1 px-1">
+                                                                        <select class="form-control input-control">
+                                                                            <option value="" selected disabled>State</option>
+                                                                        </select>
+                                                                    </div>
+                                                                    <div class="col-sm-6 pt-3 px-1">
+                                                                        <input type="text" class="form-control input-control" placeholder="Zip Code">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div id="menu2" class="container tab-pane fade">
+                                                                <h3>Menu 2</h3>
+                                                            </div>
+                                                            <div id="menu3" class="container tab-pane fade">
+                                                                <h3>Menu 3</h3>
+                                                            </div>
+                                                            <div id="menu4" class="container tab-pane fade">
+                                                                <h3>Menu 4</h3>
+                                                            </div>
+                                                            <div id="menu5" class="container tab-pane fade">
+                                                                <h3>Menu 5</h3>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="section-2 px-3 wv-100">
+                                            <div class="row pt-3">
+                                                <div class="col-12">
+                                                    <h4 class="font-weight-bold gilroy-medium">Manage your booking</h4>
+                                                    <div class="font-13 gilroy-medium">gilroy-medium</div>
+                                                    <div class="font-13 pt-2">Please enter the email address where you would like to receive your confirmation</div>
+                                                </div>
+                                            </div>
+                                            <div class="row pb-3">
+                                                <div class="col-12 pt-3 gilroy-medium">
+                                                    <div class="pt-2">
+                                                        <input type="text" class="form-control input-control" placeholder="Phone Number">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row pt-3">
+                                        <div class="section-2 px-3 wv-100 bg-white-grey">
+                                            <div class="row pt-3">
+                                                <div class="col-12">
+                                                    <h4 class="font-weight-bold gilroy-medium">Important activity information</h4>
+                                                </div>
+                                                <div class="col-12">
+                                                    <ul class="font-12 line-height-1 pl-3">
+                                                        <li class="pt-3">Premium Red Dunes & Camel Safari with BBQ at Al Khayma Camp (Lahbab, ) - Wed, Oct 13</li>
+                                                        <li class="pt-3">Premium Red Dunes & Camel Safari with BBQ at Al Khayma Camp</li>
+                                                        <li class="pt-3">You can cancel free of charge until 7 hours before the activity starts. After that time, no cancellations, changes or refunds will be made.</li>
+                                                        <li class="pt-3">This product is subject to cancellation or rescheduling based on inclement weather</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-12 font-12 line-height-1">
+                                                    By selecting to complete this booking I acknowledge that I have read and 
+                                                    accept the <span class="pink">Rules & Restrictions</span> Opens in a new window, Terms of Use Opens
+                                                     in a new window, <span class="pink">Privacy Policy</span> Opens in a new window, and Government 
+                                                     Travel Advice Opens in a new window.
+                                                </div>
+                                                <div class="col-12">
+                                                    <button class="btn btn-back px-4 mt-3">Complete Booking</button>
+                                                </div>
+                                                <div class="col-12 pt-3 pb-3">
+                                                    <i class="fa fa-lock" aria-hidden="true"></i>
+                                                    <span class="font-12">&nbsp;
+                                                        We use secure transmission and encrypted storage to protect your personal information.
+                                                    </span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-sm-12 col-md-5 px-2">
+                                    <div class="section-2 bg-white-grey">
+                                        <div class="row pt-3 px-2">
+                                            <div class="col-12">
+                                                <img src="image/phone.svg" width="30">
+                                            </div>
+                                            <div class="col-12 blue font-16 font-weight-bold pt-3">
+                                                Dubai Desert 4x4 Dune Bashing, Self-Ride 30min ATV Quad, Camel Ride, Shows,Dinner
+                                            </div>
+                                            <div class="col-12 font-13 pt-3">
+                                                <div>Lahbab</div>
+                                                <div class="gilroy-medium">Wed, Oct 13 </div>
+                                                <div class="gilroy-medium">1 ticket: 1 adult</div>
+                                                <div class="pt-1">Lahbab</div>
+                                            </div>
+                                            <div class="col-12 d-flex justify-content-between pt-3">
+                                                <div class="font-weight-bold font-14">
+                                                    <i class="fa fa-map-marker"></i> Dubai
+                                                </div>
+                                                <div class="font-weight-bold font-14 grey">
+                                                    <i class="fa fa-clock-o" aria-hidden="true"></i> 7 hours
+                                                </div>
+                                            </div>
+                                            <div class="col-12 pt-2"><hr></div>
+                                            <div class="col-12">
+                                                <div class="gilroy-medium pt-2">Your price summary</div>
+                                                <div class="d-flex justify-content-between gilroy-medium font-13 pt-3">
+                                                    <div>Total Due</div>
+                                                    <div>$65</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between font-13 pt-3">
+                                                    <div>1 Adult</div>
+                                                    <div>$65</div>
+                                                </div>
+                                                <div class="d-flex justify-content-between font-13 pt-3">
+                                                    <div>Taxes</div>
+                                                    <div>Included</div>
+                                                </div>
+                                            </div>
+                                            <div class="col-12 pt-2"><hr></div>
+                                            <div class="col-12 d-flex justify-content-between gilroy-medium pt-2 pb-4">
+                                                <div >Total</div>
+                                                <div >$65</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="section-2 mt-3">
+                                        <div class="col-12 d-flex flex-row">
+                                            <div>
+                                                <img src="image/check expiration.png" width="55" height="55">
+                                            </div>
+                                            <div class="pl-3 line-height-1-5 pt-2">
+                                                <div class="font-13 gilroy-medium font-weight-bold">Free Cancelation</div>
+                                                <div class="grey font-11 gilroy-medium">20 April 2021</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="wrapper">
+                <div class="column-holder">
+                    <div class="column-medium-6">
+                        <div class="footer-logo">
+                            <img src="image/trippbo-white.svg" />
+                        </div>
+
+                        <div class="social-links margintop-3">
+                            <a href="javascript:void(0)">
+                                <img src="image/fb-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)" class="marginhor-3">
+                                <img src="image/insta-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="image/linkedin-white.svg" style="height: 40px;" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4>
+                            Menu
+                        </h4>
+                        <ul>
+                            <li>
+                                Conditions
+                            </li>
+                            <li>
+                                Privacy Policy
+                            </li>
+                            <li>
+                                About Us
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4>
+                            Popular Cities
+                        </h4>
+                        <ul>
+                            <li class="inline-block half-width">
+                                Thailand
+                            </li>
+                            <li class="inline-block half-width">
+                                Thailand
+                            </li>
+                            <li class="inline-block half-width">
+                                Norway
+                            </li>
+                            <li class="inline-block half-width">
+                                Norway
+                            </li>
+                            <li class="inline-block half-width">
+                                Pakistan
+                            </li>
+                            <li class="inline-block half-width">
+                                Pakistan
+                            </li>
+                            <li class="inline-block half-width">
+                                Dubai
+                            </li>
+                            <li class="inline-block half-width">
+                                Dubai
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="wrapper">
+                    <div class="column-holder">
+                        <div class="column-medium-6">
+                            <p>
+                                Subscribe our Newsletter
+                            </p>
+                            <div class="position-relative newsletter">
+                                <input type="email" placeholder="Email" />
+                                <button>
+                                    Subscribe
+                                </button>
+                            </div>
+                        </div>
+                        <div class="column-medium-6 margintop-3 margintop-medium-0" style="align-self: flex-end;">
+                            © trippbo.com, Inc. All rights reserved 2021.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/alert.js"></script>
+    <script src="js/custom.js"></script>
+    <script>
+   
+    </script>
+</body>
+</html>

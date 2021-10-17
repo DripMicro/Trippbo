@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trippbo</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.png"> -->
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="wrapper-full">
+            <div class="flex space-between vcenter flex-wrap">
+                <button class="icon" onclick="myFunction()">
+                    <img src="image/hamburger.svg" style="height: 16px;" />
+                </button>
+                <a href="/" class="brand">
+                    <img src="image/trippbo-logo.png">
+                </a>
+                <div class="menus">
+                    <a href="#">BOOK A TRIP</a>
+                    <a href="#">FUND MY TRIP</a>
+                    <a href="#">FUND MY TRIP <span>SOLO</span></a>
+                    <a href="#">TICKETS LOTTERY</a>
+                </div>
+                <div class="headerOpt-right">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/bell.svg">
+                            </a>
+                        </li>
+                        <li class="messages">
+                            <a href="javascript:void(0)">
+                                Messages
+                            </a>
+                        </li>
+                        <li class="profile">
+                            <a href="javascript:void(0)">
+                                Ahmad <img src="image/caret-down-white.svg" style="height:14px">
+                            </a>
+                            <img src="image/prof-img.png" class="rounded">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+        <section>
+            <div class="wrapper">
+                <div class="breadcrumb">
+                    <ol class="">
+                        <li class="breadcrumb-item">
+                            <a href="javascript:void(0)">Choose Car</a>
+                        </li>
+                        <li class="breadcrumb-item active">Rental trip</li>
+                    </ol>
+                </div>
+
+                <div class="column-holder">
+                    <div class="column-large-4 text-align-left tbBtns marginbottom-3 marginbottom-large-0">
+                        <button>
+                            Rental Trips
+                        </button>
+                        <button class="transparent-bg">
+                            Airport transportation
+                        </button>
+                    </div>
+                    <div class="column-large-6 offset-large-2 text-align-left">
+                        <div class="column-holder">
+                            <div class="column-large-6 marginbottom-3 marginbottom-large-0">
+                                <p class="marginbottom-0">
+                                    Include AARP member rates<br>
+                                    <small>Membership is required and verified at pick-up.</small>
+                                </p>
+                            </div>
+                            <div class="column-large-6 text-align-right" style="color: #000941;">
+                                I have a discount code <img src="image/chevron-right.svg"
+                                    style="transform: rotate(90deg);">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column-holder marginver-2">
+                    <div class="column-6 column-medium-3 marginbottom-1 marginbottom-medium-0 paddingright-1">
+                        <div class="position-relative inputField-box">
+                            <img src="image/marker.svg" />
+                            <input type="text" class="inputField inputField-withicon" placeholder="Pickup" />
+                        </div>
+                    </div>
+                    <div
+                        class="column-6 column-medium-3  marginbottom-1 marginbottom-medium-0  paddingleft-1 paddingright-medium-1">
+                        <div class="position-relative inputField-box">
+                            <img src="image/arrow-right-shadow.svg" class="field-connector" />
+                            <img src="image/marker.svg" />
+                            <input type="text" class="inputField inputField-withicon" placeholder="Destination" />
+                        </div>
+                    </div>
+                    <div
+                        class="column-6 column-medium-3 marginbottom-1 marginbottom-medium-0  paddingleft-medium-1 paddingright-1">
+                        <div class="position-relative inputField-box">
+                            <img src="image/calendar.svg" />
+                            <input type="text" class="inputField inputField-withicon" placeholder="Pickup Date" />
+                        </div>
+                    </div>
+                    <div class="column-6 column-medium-3 marginbottom-1 marginbottom-medium-0  paddingleft-1">
+                        <div class="position-relative inputField-box">
+                            <img src="image/calendar.svg" />
+                            <input type="text" class="inputField inputField-withicon" placeholder="Drop Off Date" />
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column-holder marginver-2">
+                    <div class="column-6 column-medium-5 marginbottom-1 marginbottom-medium-0 paddingright-1">
+                        <div class="position-relative inputField-box">
+                            <img src="image/clock.svg" />
+                            <input type="text" class="inputField inputField-withicon" placeholder="Pickup Time" />
+                        </div>
+                    </div>
+                    <div
+                        class="column-6 column-medium-5  marginbottom-1 marginbottom-medium-0  paddingleft-1 paddingright-medium-1">
+                        <div class="position-relative inputField-box">
+                            <img src="image/clock.svg" />
+                            <input type="text" class="inputField inputField-withicon" placeholder="Drop Off Time" />
+                        </div>
+                    </div>
+                    <div class="column-medium-2 marginbottom-1 marginbottom-medium-0  paddingleft-medium-1">
+                        <button class="btn">
+                            Search
+                        </button>
+                    </div>
+                </div>
+
+                <div class="column-holder">
+                    <div class="column-medium-4 sidebar">
+                        <div class="mapDisplay widgets">
+                            <img src="image/map.png" />
+                        </div>
+                        <div class="widgets">
+                            <h4>Filter By</h4>
+                            <div class="flex space-between paddingbottom-2">
+                                <strong>Car type</strong>
+                                <strong>From</strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="1" />
+                                <label for="1" class="flex space-between marginleft-2" style="flex: 1;">Mini(1)
+                                    <small>$22</small></strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="2" />
+                                <label for="2" class="flex space-between marginleft-2" style="flex: 1;">Compact (18)
+                                    <small>$22</small></strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="3" />
+                                <label for="3" class="flex space-between marginleft-2" style="flex: 1;">Midsize (13)
+                                    <small>$22</small></strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="4" />
+                                <label for="4" class="flex space-between marginleft-2" style="flex: 1;">Minivan (6)
+                                    <small>$22</small></strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="5" />
+                                <label for="5" class="flex space-between marginleft-2" style="flex: 1;">Van (3)
+                                    <small>$22</small></strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="6" />
+                                <label for="6" class="flex space-between marginleft-2" style="flex: 1;">Sports Car (1)
+                                    <small>$22</small></strong>
+                            </div>
+                        </div>
+                        <div class="widgets">
+                            <div class="flex space-between vcenter paddingbottom-2">
+                                <h4 class="margin-0">Capacity</h4>
+                                <strong>From</strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="7" />
+                                <label for="7" class="flex space-between marginleft-2" style="flex: 1;">2-5 passengers
+                                    (116) <small>$681</small></strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="8" />
+                                <label for="8" class="flex space-between marginleft-2" style="flex: 1;">6 or more
+                                    passengers (23) <small>$713</small></strong>
+                            </div>
+                        </div>
+                        <div class="widgets">
+                            <div class="flex space-between vcenter paddingbottom-2">
+                                <h4 class="margin-0">Save time during pick-up</h4>
+                                <strong>From</strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="9" />
+                                <label for="9" class="flex space-between marginleft-2" style="flex: 1;">Online check-in
+                                    (58) <small>$681</small></strong>
+                            </div>
+                        </div>
+                        <div class="widgets">
+                            <div class="flex space-between vcenter paddingbottom-2">
+                                <h4 class="margin-0">Customer recommendation</h4>
+                                <strong>From</strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="10" />
+                                <label for="10" class="flex space-between marginleft-2" style="flex: 1;">40% & up (7)
+                                    <small>$681</small></strong>
+                            </div>
+                        </div>
+                        <div class="widgets">
+                            <div class="flex space-between vcenter paddingbottom-2">
+                                <h4 class="margin-0">Total price</h4>
+                                <strong>From</strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="11" />
+                                <label for="11" class="flex space-between marginleft-2" style="flex: 1;">Less than $25
+                                    (9)</strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="12" />
+                                <label for="12" class="flex space-between marginleft-2" style="flex: 1;">$25 to $50
+                                    (51)</strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="13" />
+                                <label for="13" class="flex space-between marginleft-2" style="flex: 1;">$50 to $75
+                                    (33)</strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="14" />
+                                <label for="14" class="flex space-between marginleft-2" style="flex: 1;">$75 to $100
+                                    (18)</strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="15" />
+                                <label for="15" class="flex space-between marginleft-2" style="flex: 1;">$100 to $200
+                                    (24)</strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="16" />
+                                <label for="16" class="flex space-between marginleft-2" style="flex: 1;">$200 to $300
+                                    (3)</strong>
+                            </div>
+                        </div>
+                        <div class="widgets">
+                            <div class="flex space-between vcenter paddingbottom-2">
+                                <h4 class="margin-0">Rental car company</h4>
+                                <strong>From</strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="17" />
+                                <label for="17" class="flex space-between marginleft-2" style="flex: 1;">Avis (29)
+                                    <small>$681</small></strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="18" />
+                                <label for="18" class="flex space-between marginleft-2" style="flex: 1;">Budget (8)
+                                    <small>$713</small></strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="19" />
+                                <label for="19" class="flex space-between marginleft-2" style="flex: 1;">Europcar (21)
+                                    <small>$713</small></strong>
+                            </div>
+                            <div class="flex vcenter paddingver-1">
+                                <input type="checkbox" id="20" />
+                                <label for="20" class="flex space-between marginleft-2" style="flex: 1;">Thrifty (72)
+                                    <small>$713</small></strong>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="column-medium-8 paddingleft-medium-1">
+                        <div class="rightBody">
+                            <div class="column-holder marginbottom-2">
+                                <div class="column-6 column-medium-9 paddingright-1">
+                                    <div class="resultDiv">
+                                        <span>14</span> Flights available
+                                    </div>
+                                </div>
+                                <div class="column-6 column-medium-3 paddingleft-1">
+                                    <div class="position-relative inputField-box">
+                                        <select class="inputField">
+                                            <option value="low" selected>Lowest Price</option>
+                                            <option value="high">Highest Price</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="result-lists">
+                                <ul>
+                                    <li class="padding-2">
+                                        <div class="column-holder">
+                                            <div class="column-medium-4 text-align-center marginbottom-3 marginbottom-medium-0">
+                                                <img src="image/car.png" />
+                                            </div>
+                                            <div class="column-medium-8 paddingleft-medium-0">
+                                                <div class="flex vcenter space-between">
+                                                    <div>
+                                                        <h2 class="item-title">Mercedes-Benz S-Class</h2>
+                                                        <p>Premium Class or Similar</p>
+                                                    </div>
+                                                    <img src="image/budget.png" style="height: 24px;" />
+                                                </div>
+                                                <div class="column-holder">
+                                                    <div class="column-medium-8 item-spec">
+                                                        <span class="marginbottom-2"><img src="image/profile.svg"
+                                                                style="height: 16px;" /> 5</span>
+                                                        <span class="marginleft-2 marginbottom-2"><img
+                                                                src="image/manual-transmission.svg"
+                                                                style="height: 16px;" /> Automatic</span><br>
+                                                        <span class="marginbottom-2"><img src="image/meter.svg"
+                                                                style="height: 16px;" /> Unlimited Mileage</span><br>
+                                                        <span class="marginbottom-2"><img src="image/clean.svg"
+                                                                style="height: 16px;" /> Enhanced Cleaning</span><br>
+                                                        <span class="marginbottom-2"><img src="image/marker.svg"
+                                                                style="height: 16px;" /> Zayed Road Al Barsha, Dubai,
+                                                            ARE</span>
+                                                    </div>
+                                                    <div class="column-medium-4 text-align-right">
+                                                        <strong>$60</strong>/ Day
+                                                        <p>Pay at pick-up</p>
+                                                        <button class="btn">
+                                                            Reserve
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="padding-2">
+                                        <div class="column-holder">
+                                            <div class="column-medium-4 text-align-center  marginbottom-3 marginbottom-medium-0">
+                                                <img src="image/car.png" />
+                                            </div>
+                                            <div class="column-medium-8 paddingleft-medium-0">
+                                                <div class="flex vcenter space-between">
+                                                    <div>
+                                                        <h2 class="item-title">Mercedes-Benz S-Class</h2>
+                                                        <p>Premium Class or Similar</p>
+                                                    </div>
+                                                    <img src="image/budget.png" style="height: 24px;" />
+                                                </div>
+                                                <div class="column-holder">
+                                                    <div class="column-medium-8 item-spec">
+                                                        <span class="marginbottom-2"><img src="image/profile.svg"
+                                                                style="height: 16px;" /> 5</span>
+                                                        <span class="marginleft-2 marginbottom-2"><img
+                                                                src="image/manual-transmission.svg"
+                                                                style="height: 16px;" /> Automatic</span><br>
+                                                        <span class="marginbottom-2"><img src="image/meter.svg"
+                                                                style="height: 16px;" /> Unlimited Mileage</span><br>
+                                                        <span class="marginbottom-2"><img src="image/clean.svg"
+                                                                style="height: 16px;" /> Enhanced Cleaning</span><br>
+                                                        <span class="marginbottom-2"><img src="image/marker.svg"
+                                                                style="height: 16px;" /> Zayed Road Al Barsha, Dubai,
+                                                            ARE</span>
+                                                    </div>
+                                                    <div class="column-medium-4 text-align-right">
+                                                        <strong>$60</strong>/ Day
+                                                        <p>Pay at pick-up</p>
+                                                        <button class="btn">
+                                                            Reserve
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="padding-2">
+                                        <div class="column-holder">
+                                            <div class="column-medium-4 text-align-center marginbottom-3 marginbottom-medium-0">
+                                                <img src="image/car.png" />
+                                            </div>
+                                            <div class="column-medium-8 paddingleft-medium-0">
+                                                <div class="flex vcenter space-between">
+                                                    <div>
+                                                        <h2 class="item-title">Mercedes-Benz S-Class</h2>
+                                                        <p>Premium Class or Similar</p>
+                                                    </div>
+                                                    <img src="image/budget.png" style="height: 24px;" />
+                                                </div>
+                                                <div class="column-holder">
+                                                    <div class="column-medium-8 item-spec">
+                                                        <span class="marginbottom-2"><img src="image/profile.svg"
+                                                                style="height: 16px;" /> 5</span>
+                                                        <span class="marginleft-2 marginbottom-2"><img
+                                                                src="image/manual-transmission.svg"
+                                                                style="height: 16px;" /> Automatic</span><br>
+                                                        <span class="marginbottom-2"><img src="image/meter.svg"
+                                                                style="height: 16px;" /> Unlimited Mileage</span><br>
+                                                        <span class="marginbottom-2"><img src="image/clean.svg"
+                                                                style="height: 16px;" /> Enhanced Cleaning</span><br>
+                                                        <span class="marginbottom-2"><img src="image/marker.svg"
+                                                                style="height: 16px;" /> Zayed Road Al Barsha, Dubai,
+                                                            ARE</span>
+                                                    </div>
+                                                    <div class="column-medium-4 text-align-right">
+                                                        <strong>$60</strong>/ Day
+                                                        <p>Pay at pick-up</p>
+                                                        <button class="btn">
+                                                            Reserve
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="padding-2">
+                                        <div class="column-holder">
+                                            <div class="column-medium-4 text-align-center marginbottom-3 marginbottom-medium-0">
+                                                <img src="image/car.png" />
+                                            </div>
+                                            <div class="column-medium-8 paddingleft-medium-0">
+                                                <div class="flex vcenter space-between">
+                                                    <div>
+                                                        <h2 class="item-title">Mercedes-Benz S-Class</h2>
+                                                        <p>Premium Class or Similar</p>
+                                                    </div>
+                                                    <img src="image/budget.png" style="height: 24px;" />
+                                                </div>
+                                                <div class="column-holder">
+                                                    <div class="column-medium-8 item-spec">
+                                                        <span class="marginbottom-2"><img src="image/profile.svg"
+                                                                style="height: 16px;" /> 5</span>
+                                                        <span class="marginleft-2 marginbottom-2"><img
+                                                                src="image/manual-transmission.svg"
+                                                                style="height: 16px;" /> Automatic</span><br>
+                                                        <span class="marginbottom-2"><img src="image/meter.svg"
+                                                                style="height: 16px;" /> Unlimited Mileage</span><br>
+                                                        <span class="marginbottom-2"><img src="image/clean.svg"
+                                                                style="height: 16px;" /> Enhanced Cleaning</span><br>
+                                                        <span class="marginbottom-2"><img src="image/marker.svg"
+                                                                style="height: 16px;" /> Zayed Road Al Barsha, Dubai,
+                                                            ARE</span>
+                                                    </div>
+                                                    <div class="column-medium-4 text-align-right">
+                                                        <strong>$60</strong>/ Day
+                                                        <p>Pay at pick-up</p>
+                                                        <button class="btn">
+                                                            Reserve
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="padding-2">
+                                        <div class="column-holder">
+                                            <div class="column-medium-4 text-align-center marginbottom-3 marginbottom-medium-0">
+                                                <img src="image/car.png" />
+                                            </div>
+                                            <div class="column-medium-8 paddingleft-medium-0">
+                                                <div class="flex vcenter space-between">
+                                                    <div>
+                                                        <h2 class="item-title">Mercedes-Benz S-Class</h2>
+                                                        <p>Premium Class or Similar</p>
+                                                    </div>
+                                                    <img src="image/budget.png" style="height: 24px;" />
+                                                </div>
+                                                <div class="column-holder">
+                                                    <div class="column-medium-8 item-spec">
+                                                        <span class="marginbottom-2"><img src="image/profile.svg"
+                                                                style="height: 16px;" /> 5</span>
+                                                        <span class="marginleft-2 marginbottom-2"><img
+                                                                src="image/manual-transmission.svg"
+                                                                style="height: 16px;" /> Automatic</span><br>
+                                                        <span class="marginbottom-2"><img src="image/meter.svg"
+                                                                style="height: 16px;" /> Unlimited Mileage</span><br>
+                                                        <span class="marginbottom-2"><img src="image/clean.svg"
+                                                                style="height: 16px;" /> Enhanced Cleaning</span><br>
+                                                        <span class="marginbottom-2"><img src="image/marker.svg"
+                                                                style="height: 16px;" /> Zayed Road Al Barsha, Dubai,
+                                                            ARE</span>
+                                                    </div>
+                                                    <div class="column-medium-4 text-align-right">
+                                                        <strong>$60</strong>/ Day
+                                                        <p>Pay at pick-up</p>
+                                                        <button class="btn">
+                                                            Reserve
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="padding-2">
+                                        <div class="column-holder">
+                                            <div class="column-medium-4 text-align-center marginbottom-3 marginbottom-medium-0">
+                                                <img src="image/car.png" />
+                                            </div>
+                                            <div class="column-medium-8 paddingleft-medium-0">
+                                                <div class="flex vcenter space-between">
+                                                    <div>
+                                                        <h2 class="item-title">Mercedes-Benz S-Class</h2>
+                                                        <p>Premium Class or Similar</p>
+                                                    </div>
+                                                    <img src="image/budget.png" style="height: 24px;" />
+                                                </div>
+                                                <div class="column-holder">
+                                                    <div class="column-medium-8 item-spec">
+                                                        <span class="marginbottom-2"><img src="image/profile.svg"
+                                                                style="height: 16px;" /> 5</span>
+                                                        <span class="marginleft-2 marginbottom-2"><img
+                                                                src="image/manual-transmission.svg"
+                                                                style="height: 16px;" /> Automatic</span><br>
+                                                        <span class="marginbottom-2"><img src="image/meter.svg"
+                                                                style="height: 16px;" /> Unlimited Mileage</span><br>
+                                                        <span class="marginbottom-2"><img src="image/clean.svg"
+                                                                style="height: 16px;" /> Enhanced Cleaning</span><br>
+                                                        <span class="marginbottom-2"><img src="image/marker.svg"
+                                                                style="height: 16px;" /> Zayed Road Al Barsha, Dubai,
+                                                            ARE</span>
+                                                    </div>
+                                                    <div class="column-medium-4 text-align-right">
+                                                        <strong>$60</strong>/ Day
+                                                        <p>Pay at pick-up</p>
+                                                        <button class="btn">
+                                                            Reserve
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="padding-2">
+                                        <div class="column-holder">
+                                            <div class="column-medium-4 text-align-center marginbottom-3 marginbottom-medium-0">
+                                                <img src="image/car.png" />
+                                            </div>
+                                            <div class="column-medium-8 paddingleft-medium-0">
+                                                <div class="flex vcenter space-between">
+                                                    <div>
+                                                        <h2 class="item-title">Mercedes-Benz S-Class</h2>
+                                                        <p>Premium Class or Similar</p>
+                                                    </div>
+                                                    <img src="image/budget.png" style="height: 24px;" />
+                                                </div>
+                                                <div class="column-holder">
+                                                    <div class="column-medium-8 item-spec">
+                                                        <span class="marginbottom-2"><img src="image/profile.svg"
+                                                                style="height: 16px;" /> 5</span>
+                                                        <span class="marginleft-2 marginbottom-2"><img
+                                                                src="image/manual-transmission.svg"
+                                                                style="height: 16px;" /> Automatic</span><br>
+                                                        <span class="marginbottom-2"><img src="image/meter.svg"
+                                                                style="height: 16px;" /> Unlimited Mileage</span><br>
+                                                        <span class="marginbottom-2"><img src="image/clean.svg"
+                                                                style="height: 16px;" /> Enhanced Cleaning</span><br>
+                                                        <span class="marginbottom-2"><img src="image/marker.svg"
+                                                                style="height: 16px;" /> Zayed Road Al Barsha, Dubai,
+                                                            ARE</span>
+                                                    </div>
+                                                    <div class="column-medium-4 text-align-right">
+                                                        <strong>$60</strong>/ Day
+                                                        <p>Pay at pick-up</p>
+                                                        <button class="btn">
+                                                            Reserve
+                                                        </button>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div class="wrapper">
+                <div class="column-holder">
+                    <div class="column-medium-6">
+                        <div class="footer-logo">
+                            <img src="image/trippbo-white.svg" />
+                        </div>
+
+                        <div class="social-links margintop-3">
+                            <a href="javascript:void(0)">
+                                <img src="image/fb-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)" class="marginhor-3">
+                                <img src="image/insta-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="image/linkedin-white.svg" style="height: 40px;" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4>
+                            Menu
+                        </h4>
+                        <ul>
+                            <li>
+                                Conditions
+                            </li>
+                            <li>
+                                Privacy Policy
+                            </li>
+                            <li>
+                                About Us
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4>
+                            Popular Cities
+                        </h4>
+                        <ul>
+                            <li class="inline-block half-width">
+                                Thailand
+                            </li>
+                            <li class="inline-block half-width">
+                                Thailand
+                            </li>
+                            <li class="inline-block half-width">
+                                Norway
+                            </li>
+                            <li class="inline-block half-width">
+                                Norway
+                            </li>
+                            <li class="inline-block half-width">
+                                Pakistan
+                            </li>
+                            <li class="inline-block half-width">
+                                Pakistan
+                            </li>
+                            <li class="inline-block half-width">
+                                Dubai
+                            </li>
+                            <li class="inline-block half-width">
+                                Dubai
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="wrapper">
+                    <div class="column-holder">
+                        <div class="column-medium-6">
+                            <p>
+                                Subscribe our Newsletter
+                            </p>
+                            <div class="position-relative newsletter">
+                                <input type="email" placeholder="Email" />
+                                <button>
+                                    Subscribe
+                                </button>
+                            </div>
+                        </div>
+                        <div class="column-medium-6 margintop-3 margintop-medium-0" style="align-self: flex-end;">
+                            © trippbo.com, Inc. All rights reserved 2021.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <script src="js/custom.js"></script>
+</body>
+</html>

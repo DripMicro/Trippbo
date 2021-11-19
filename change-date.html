@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Dates</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.png"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/change-date.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/aad9309da9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="wrapper-full">
+            <div class="d-flex space-between vcenter flex-wrap">
+                <button class="icon" onclick="myFunction()"><img src="image/hamburger.svg" style="height: 16px;" /></button>
+                <a href="/" class="brand"><img src="image/trippbo-logo.png"></a>
+                <div class="menus">
+                    <a href="#">BOOK A TRIP</a>
+                    <a href="#">FUND MY TRIP</a>
+                    <a href="#">FUND MY TRIP <span>SOLO</span></a>
+                    <a href="#">TICKETS LOTTERY</a>
+                </div>
+                <div class="headerOpt-right">
+                    <ul>
+                        <li><a href="javascript:void(0)"><img src="image/bell.svg" /></a>
+                        </li>
+                        <li class="messages"><a href="javascript:void(0)">Messages</a></li>
+                        <li class="avatar">
+                            <a href="javascript:void(0)">Ahmad <img src="image/caret-down-white.svg" style="height:14px"></a>
+                            <img src="image/prof-img.png" class="avatar_rounded">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-content"> 
+        <div><button type="button" class="btn gilroy-medium btn-fe2f70 box-shadow-fe2f70 rounded-0 font-12 text-capitalize" data-toggle="modal" data-target="#change-dates">Change Dates</button></div>
+        <!-- Report this Modal -->
+        <div class="modal fade" id="change-dates">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content rounded-0">
+                    <!-- Modal Header -->
+                    <div class="modal-header border-0 pb-0">
+                        <h4 class="modal-title gilroy-medium font-18">Change dates</h4>
+                       <button type="button" class="close p-0 m-0" data-dismiss="modal" style="float: none;">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="grid-1 mb-3">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex">
+                                    <div class="d-flex align-items-center mr-2"><img class="icon-20px" src="image/policy.png"></div>									
+                                    <div><p class="gilroy-regular font-16 text-23242c m-0">Check in :</p></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-12" placeholder="Wed 3"></div>
+                            </div>
+                            <div>
+                                <div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-12" placeholder="November 2021"></div>
+                            </div>
+						</div>
+                        <div class="grid-1 mb-3">
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex">
+                                    <div class="d-flex align-items-center mr-2"><img class="icon-20px" src="image/policy.png"></div>									
+                                    <div><p class="gilroy-regular font-16 text-23242c m-0">Check out :</p></div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-12" placeholder="Wed 3"></div>
+                            </div>
+                            <div>
+                                <div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-12" placeholder="November 2021"></div>
+                            </div>
+						</div>
+                        <div class="d-flex justify-content-end">
+                            <div class="mr-2"><button type="button" data-dismiss="modal" class="btn gilroy-medium font-14 btn-white opacity-40 px-5" style="border: 1px solid #23242C!important;">Cancel</button></div>
+                            <div><button type="button" class="btn gilroy-medium font-14 btn-fe2f70 box-shadow-fe2f70 px-4">Check Availability</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <footer>
+            <div class="wrapper mb-3">
+                <div class="column-holder">
+                    <div class="column-medium-6">
+                        <div class="footer-logo">
+                            <img src="image/trippbo-white.svg" />
+                        </div>
+
+                        <div class="social-links margintop-3">
+                            <a href="javascript:void(0)">
+                                <img src="image/fb-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)" class="marginhor-3">
+                                <img src="image/insta-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="image/linkedin-white.svg" style="height: 40px;" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4 class="gilroy-semi">Menu</h4>
+                        <ul class="d-grid grid-columns-auto-1">
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Conditions</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Privacy Policy</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4 class="gilroy-semi">Popular Cities</h4>
+                        <ul class="d-grid grid-columns-auto-2">
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Thailand</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Thailand</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Norway</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Norway</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Pakistan</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Pakistan</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Dubai</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Dubai</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="wrapper">
+                    <div class="column-holder align-items-center justify-content-between">
+                        <div class="column-medium-6">
+                            <p>Subscribe our Newsletter</p>
+                            <div class="newsletter">
+                                <input type="email" placeholder="Email" />
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="column-medium-6 margintop-3 margintop-medium-0 text-white mt-3">
+                            © trippbo.com, Inc. All rights reserved 2021.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>	
+    <script>
+	$('#myTab a').on('click', function (event) {
+		event.preventDefault()
+		$(this).tab('show')
+	});
+	</script>
+</body>
+</html>

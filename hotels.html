@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotels</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.png"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/hotels.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="wrapper-full">
+            <div class="d-flex space-between vcenter flex-wrap">
+                <button class="icon" onclick="myFunction()"><img src="image/hamburger.svg" style="height: 16px;" /></button>
+                <a href="/" class="brand"><img src="image/trippbo-logo.png"></a>
+                <div class="menus">
+                    <a href="#">BOOK A TRIP</a>
+                    <a href="#">FUND MY TRIP</a>
+                    <a href="#">FUND MY TRIP <span>SOLO</span></a>
+                    <a href="#">TICKETS LOTTERY</a>
+                </div>
+                <div class="headerOpt-right">
+                    <ul>
+                        <li><a href="javascript:void(0)"><img src="image/bell.svg" /></a></li>
+                        <li class="messages"><a href="javascript:void(0)"> Messages</a></li>
+                        <li class="avatar"><a href="javascript:void(0)">Ahmad <img src="image/caret-down-white.svg" style="height:14px"></a><img src="image/prof-img.png" class="avatar_rounded" /></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+        <section class="pb-5">
+            <div class="wrapper">
+                <div class="breadcrumb_ mb-4">
+                    <ol class="">
+                        <li class="breadcrumb-item">
+                            <a>Hotels</a>
+                        </li>
+                        <li class="breadcrumb-item active">Hotel Search</li>
+                    </ol>
+                </div>			
+			
+				<div id="container-2" class="form-group row px-2">
+					<div class="col-sm-6 px-1 mb-2">
+						<div class="flex-grow-1"><div class="position-relative inputField-box w-100"><img class="icon-18px mr-1" src="image/location.png"><input type="text" class="inputField inputField-withicon" placeholder="Destination" /></div></div>
+					</div>
+					<div class="col-sm-2 px-1 mb-2">
+						<div class="position-relative inputField-box">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+							<input type="text" id="DateFrom" class="inputField inputField-withicon" placeholder="Check In date">                 
+						</div>
+					</div>
+					<div class="col-sm-2 px-1 mb-2">
+						<div class="position-relative inputField-box">
+							<i class="fa fa-calendar" aria-hidden="true"></i>
+							<input type="text" id="DateTo" class="inputField inputField-withicon" placeholder="Check Out date">                 
+						</div>
+					</div>
+					<div class="col-sm-2 px-1 mb-2">
+						<button class="btn_search">Search</button>
+					</div>
+				</div>
+				<div id="container-8">
+					<div class="d-flex align-items-center justify-content-between p-3">
+						<div><button class="btn gilroy-medium font-16" onclick="close_container_8();"><i class="fa fa-times mr-1"></i> <span>United Arab Emirates</span></button></div>					
+						<div>
+							<button class="btn gilroy-semi font-12 text-fe2f70 d-flex align-items-center justify-content-between p-0">
+								<img class="icon-14px mr-1" src="image/filter.png"> 
+								<span>Filter</span>
+							</button>
+						</div>
+					</div>
+					<div><img src="image/full-map.png"></div>
+					<div class="hotels-grid-sm">
+						<div><img src="image/rectangle-23.png"></div>																																										
+						<div class="d-flex flex-column justify-content-between p-2">
+							<div>
+								<div class="d-flex justify-content-between">												
+									<div>												
+										<h4 class="gilroy-semi font-18 mb-1">Royalton Hotel</h4>
+										<div class="gilroy-medium font-12 mb-2"><i class="fa fa-star yellow"></i> 5.0 (8 reviews)</div>
+										<div class="d-flex align-items-center">
+											<img class="icon-10px mr-1" src="image/location.png"> 
+											<span class="gilroy-medium font-12">Dubai</span>
+										</div>
+									</div>												
+									<div>												
+										<img class="icon-24px mr-1" src="image/save.png">
+									</div>
+								</div>
+							</div>						
+							<div>										
+								<div class="d-flex align-items-center justify-content-between">												
+									<div><p class="gilroy-medium font-12 text-23242c opacity-0-6 mb-0">Free Cancelation</p></div>												
+									<div>
+										<span class="gilroy-medium font-14 text-fe2f70"><span>$40<span> / <span>$Night<span></span></span></span></span></span>												
+									</div>
+								</div>
+							</div>												
+						</div>							
+					</div>							
+				</div>					
+				<div class="row">
+					<aside id="aside" class="col-sm-12 col-lg-4">					
+						<div id="container-7" class="bg-white p-2 border mb-3">
+							<div><img src="image/map.png" /></div>					
+						</div>							
+						<div id="container-3" class="d-flex align-items-center bg-white justify-content-between py-2">
+							<div><button class="btn font-16" onclick="close_aside();"><i class="fa fa-times mr-1"></i> <span>Sort & Filter</span></button></div>					
+							<div><button class="btn gilroy-semi font-16 text-fe2f70">Clear</button></div>					
+						</div>							
+						<div id="container-5" class="bg-white mb-4">
+							<div><p class="gilroy-medium font-16 mb-2">Search by property name</p></div>					
+							<div>
+								<div class="position-relative inputField-box">
+									<i class="fa fa-search" aria-hidden="true"></i>
+									<input type="text" class="inputField inputField-withicon bg-fafafa" placeholder="Search" />                 
+								</div>							
+							</div>					
+						</div>	
+						<h4 id="h4-1" class="gilroy-medium font-22 mb-1">Filter by</h4>
+						<p class="gilroy-medium font-16 mb-2">Popular filters</p>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Hotel<input type="checkbox" checked="checked" name="popular" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Breakfast included<input type="checkbox" name="popular" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">All inclusive<input type="checkbox" name="popular" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Hotel resort<input type="checkbox" name="popular" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Hotel resort<input type="checkbox" name="popular" /><span></span></label></div>
+						<div class="mb-4"><label class="trippbo-checkbox gilroy-regular">Ocean view<input type="checkbox" name="popular" /><span></span></label></div>
+						<hr class="mb-4" />						
+						
+						<p class="gilroy-medium font-16 mb-2">Star rating</p>
+						<div id="container-star" class="container-star mb-4">
+							<div><button type="button" class="btn btn-container-star gilroy-regular font-20"><span>1</span> <i class="fa fa-star"></i></button></div>						
+							<div><button type="button" class="btn btn-container-star gilroy-regular font-20"><span>2</span> <i class="fa fa-star"></i></button></div>						
+							<div><button type="button" class="btn btn-container-star gilroy-regular font-20"><span>3</span> <i class="fa fa-star"></i></button></div>						
+							<div><button type="button" class="btn btn-container-star gilroy-regular font-20"><span>4</span> <i class="fa fa-star"></i></button></div>						
+							<div><button type="button" class="btn btn-container-star gilroy-regular font-20 star-active"><span>5</span> <i class="fa fa-star"></i></button></div>						
+						</div>						
+						<hr class="mb-4" />
+						
+						<h4 class="gilroy-medium font-22 mb-3">Your budget</h4>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Less than $75<input type="checkbox" checked="checked" name="budget" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">$75 to $125<input type="checkbox" name="budget" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">$125 to $200<input type="checkbox" name="budget" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">$200 to $300<input type="checkbox" name="budget" /><span></span></label></div>
+						<div class="mb-4"><label class="trippbo-checkbox gilroy-regular">$200 to $300<input type="checkbox" name="budget" /><span></span></label></div>
+						<hr class="mb-4" />							
+						
+						<h4 class="gilroy-medium font-22 mb-3">Guest rating</h4>
+						<div class="mb-1"><label class="trippbo-radio gilroy-regular">Any<input type="radio" checked="checked" name="guest" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-radio gilroy-regular">Wonderful 4.5+<input type="radio" name="guest" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-radio gilroy-regular">Very good 4+<input type="radio" name="guest" /><span></span></label></div>
+						<div class="mb-4"><label class="trippbo-radio gilroy-regular">Good 3.5+<input type="radio" name="guest" /><span></span></label></div>
+						<hr class="mb-4" />							
+						
+						<h4 class="gilroy-medium font-22 mb-3">Cleaning and safety practices</h4>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Enhanced cleaning Properties taking additional steps to clean and sanitize<input type="checkbox" checked="checked" name="safety" /><span></span></label></div>
+						<hr class="mb-4" />								
+						
+						<h4 class="gilroy-medium font-22 mb-3">Payment type</h4>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Free cancellation<input type="checkbox" checked="checked" name="payment" /><span></span></label></div>
+						<div class="mb-4"><label class="trippbo-checkbox gilroy-regular">Reserve now, pay later<input type="checkbox" name="payment" /><span></span></label></div>
+						<hr class="mb-4" />								
+						
+						<h4 class="gilroy-medium font-22 mb-3">Property type</h4>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Hotel<input type="checkbox" checked="checked" name="property" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Hotel resort<input type="checkbox" name="property" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Apartment<input type="checkbox" name="property" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Private vacation home<input type="checkbox" name="property" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Chalet<input type="checkbox" name="property" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Pousada (Portugal)<input type="checkbox" name="property" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Bed & breakfast<input type="checkbox" name="property" /><span></span></label></div>
+						<div class="mb-4"><label class="trippbo-checkbox gilroy-regular">Villa<input type="checkbox" name="property" /><span></span></label></div>
+						<hr class="mb-4" />		
+						
+						<h4 class="gilroy-medium font-22 mb-3">Neighborhood</h4>
+						<div class="mb-1"><label class="trippbo-radio gilroy-regular">Any<input type="radio" checked="checked" name="neighborhood" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-radio gilroy-regular">Margalla Hills<input type="radio" name="neighborhood" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-radio gilroy-regular">Patriata Cable Car<input type="radio" name="neighborhood" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-radio gilroy-regular">Lok Virsa Museum<input type="radio" name="neighborhood" /><span></span></label></div>
+						<div class="mb-4"><label class="trippbo-radio gilroy-regular">Bari Imam Cave<input type="radio" name="neighborhood" /><span></span></label></div>
+						<hr class="mb-4" />	
+
+						<h4 class="gilroy-medium font-22 mb-3">Meal plans available</h4>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">All inclusive<input type="checkbox" checked="checked" name="meal" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Dinner included<input type="checkbox" name="meal" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Lunch included<input type="checkbox" name="meal" /><span></span></label></div>
+						<div class="mb-4"><label class="trippbo-checkbox gilroy-regular">Breakfast included<input type="checkbox" name="meal" /><span></span></label></div>
+						<hr class="mb-4" />								
+						
+						<h4 class="gilroy-medium font-22 mb-3">Amenities</h4>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Ocean view<input type="checkbox" checked="checked" name="amenities" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Free airport shuttle<input type="checkbox" name="amenities" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Spa<input type="checkbox" name="amenities" /><span></span></label></div>
+						<div class="mb-3"><label class="trippbo-checkbox gilroy-regular">Water park<input type="checkbox" name="amenities" /><span></span></label></div>
+						<p class="mb-4"><a class="btn btn-link gilroy-semi font-12 text-fe2f70 p-0" href="#">See more</a></p>
+						<hr class="mb-4" />							
+						
+						<h4 class="gilroy-medium font-22 mb-3">Accessibility</h4>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Accessible bathroom<input type="checkbox" name="accessibility" /><span></span></label></div>
+						<div class="mb-1"><label class="trippbo-checkbox gilroy-regular">Roll-in shower<input type="checkbox" name="accessibility" /><span></span></label></div>
+						<div class="mb-4"><label class="trippbo-checkbox gilroy-regular">In-room accessibility<input type="checkbox" name="accessibility" /><span></span></label></div>
+						<hr class="mb-4" />								
+						
+						<h4 class="gilroy-medium font-22 mb-3">Trip type</h4>
+						<div class="mb-1"><label class="trippbo-checkbox-title gilroy-regular"><div class="font-16">Business</div>friendly See properties with amenities to help you work comfortably, like WiFi and breakfast.<input type="checkbox" name="trip" /><span></span></label></div>
+						<div><label class="trippbo-checkbox-title gilroy-regular"><div class="font-16">Family friendly</div>See properties that include family essentials like in-room conveniences and activities for the kids.<input type="checkbox" name="trip" /><span></span></label></div>						
+						<div id="container-6" class="bg-white p-2">
+							<div><button type="button" class="btn btn-fe2f70 btn-block">Apply</button></div>				
+						</div>												
+					</aside>						
+					<main class="col-sm-12 col-lg-8">																		
+						<div id="container-total-flight" class="my-3">							
+							<div class="d-flex align-items-center bg-fafafa px-3">
+									<div><span class="gilroy-semi text-fe2f70 font-14 mr-1">14</span> <span class="gilroy-regular font-14">Hotels available in this Area</span></div>
+							</div>						
+							<div>
+								<div class="position-relative inputField-box">
+									<select class="inputField inputField-withicon pl-3">
+										<option value="1" selected="">Recomended</option>
+										<option value="2"></option>
+									</select>									
+								</div>								
+							</div>									
+						</div>							
+						<div id="container-4" class="mb-3">							
+							<div class="btn-grid">
+								<div>
+									<button id="btn-1" onclick="open_aside();" class="btn btn-pink btn-block gilroy-semi font-12 text-fe2f70 rounded-0 d-flex align-items-center justify-content-center py-2">
+										<img class="icon-14px mr-1" src="image/filter.png" /> 
+										<span>Filter</span>
+									</button>
+								</div>								
+								<div>
+									<button id="btn-2" onclick="open_container_8();" class="btn btn-pink btn-block gilroy-semi font-12 text-fe2f70 rounded-0 d-flex align-items-center justify-content-center py-2">
+										<img class="icon-14px mr-1" src="image/filter.png" /> 
+										<span>View On A Map</span>
+									</button>
+								</div>
+							</div>								
+						</div>						
+						<ul id="container-hotels" class="container-hotels">
+							<li>
+								<div class="hotels-grid">
+									<div><img src="image/rectangle-23.png" /></div>													
+									<div class="d-flex flex-column justify-content-between">
+										<div>
+											<div class="d-flex justify-content-between">												
+												<div>												
+													<h4 class="gilroy-semi font-24 mb-1">Royalton Hotel</h4>
+													<div class="gilroy-medium font-14 mb-2"><i class="fa fa-star yellow"></i> 5.0 (8 reviews)</div>
+													<div class="d-flex align-items-center">
+														<img class="icon-14px mr-1" src="image/location.png" /> 
+														<span class="gilroy-medium font-14">Dubai</span>
+													</div>
+												</div>												
+												<div>												
+													<img class="icon-24px mr-1" src="image/save.png">
+												</div>
+											</div>
+										</div>						
+										<div>										
+											<div class="d-flex align-items-center justify-content-between">												
+												<div><p class="gilroy-medium font-14 text-23242c opacity-0-6 mb-0">Free Cancelation</p></div>												
+												<div>
+													<span class="gilroy-medium font-16 text-fe2f70"><span>$40<span> / <span>$Night<span></span></span></span></span></span>												
+												</div>
+											</div>
+										</div>												
+									</div>							
+								</div>							
+							</li>							
+							<li>
+								<div class="hotels-grid">
+									<div><img src="image/midway.png" /></div>													
+									<div class="d-flex flex-column justify-content-between">
+										<div>
+											<div class="d-flex justify-content-between">												
+												<div>												
+													<h4 class="gilroy-semi font-24 mb-1">Midway Two One Hotel</h4>
+													<div class="gilroy-medium font-14 mb-2"><i class="fa fa-star yellow"></i> 5.0 (8 reviews)</div>
+													<div class="d-flex align-items-center">
+														<img class="icon-14px mr-1" src="image/location.png" /> 
+														<span class="gilroy-medium font-14">Dubai</span>
+													</div>
+												</div>												
+												<div>												
+													<img class="icon-24px mr-1" src="image/save.png">
+												</div>
+											</div>
+										</div>						
+										<div>										
+											<div class="d-flex align-items-center justify-content-between">												
+												<div><p class="gilroy-medium font-14 text-23242c opacity-0-6 mb-0">Free Cancelation</p></div>												
+												<div>
+													<span class="gilroy-medium font-16 text-fe2f70"><span>$40<span> / <span>$Night<span></span></span></span></span></span>												
+												</div>
+											</div>
+										</div>												
+									</div>							
+								</div>							
+							</li>							
+							<li>
+								<div class="hotels-grid">
+									<div><img src="image/peral.png" /></div>													
+									<div class="d-flex flex-column justify-content-between">
+										<div>
+											<div class="d-flex justify-content-between">												
+												<div>												
+													<h4 class="gilroy-semi font-24 mb-1">Peral Continental One Hotel</h4>
+													<div class="gilroy-medium font-14 mb-2"><i class="fa fa-star yellow"></i> 5.0 (8 reviews)</div>
+													<div class="d-flex align-items-center">
+														<img class="icon-14px mr-1" src="image/location.png" /> 
+														<span class="gilroy-medium font-14">Dubai</span>
+													</div>
+												</div>												
+												<div>												
+													<img class="icon-24px mr-1" src="image/save.png">
+												</div>
+											</div>
+										</div>						
+										<div>										
+											<div class="d-flex align-items-center justify-content-between">												
+												<div><p class="gilroy-medium font-14 text-23242c opacity-0-6 mb-0">Free Cancelation</p></div>												
+												<div>
+													<span class="gilroy-medium font-16 text-fe2f70"><span>$40<span> / <span>$Night<span></span></span></span></span></span>												
+												</div>
+											</div>
+										</div>												
+									</div>							
+								</div>							
+							</li>							
+							<li>
+								<div class="hotels-grid">
+									<div><img src="image/rectangle-23.png" /></div>													
+									<div class="d-flex flex-column justify-content-between">
+										<div>
+											<div class="d-flex justify-content-between">												
+												<div>												
+													<h4 class="gilroy-semi font-24 mb-1">Royalton Hotel</h4>
+													<div class="gilroy-medium font-14 mb-2"><i class="fa fa-star yellow"></i> 5.0 (8 reviews)</div>
+													<div class="d-flex align-items-center">
+														<img class="icon-14px mr-1" src="image/location.png" /> 
+														<span class="gilroy-medium font-14">Dubai</span>
+													</div>
+												</div>												
+												<div>												
+													<img class="icon-24px mr-1" src="image/save.png">
+												</div>
+											</div>
+										</div>						
+										<div>										
+											<div class="d-flex align-items-center justify-content-between">												
+												<div><p class="gilroy-medium font-14 text-23242c opacity-0-6 mb-0">Free Cancelation</p></div>												
+												<div>
+													<span class="gilroy-medium font-16 text-fe2f70"><span>$40<span> / <span>$Night<span></span></span></span></span></span>												
+												</div>
+											</div>
+										</div>												
+									</div>							
+								</div>							
+							</li>							
+							<li>
+								<div class="hotels-grid">
+									<div><img src="image/midway.png" /></div>													
+									<div class="d-flex flex-column justify-content-between">
+										<div>
+											<div class="d-flex justify-content-between">												
+												<div>												
+													<h4 class="gilroy-semi font-24 mb-1">Midway Two One Hotel</h4>
+													<div class="gilroy-medium font-14 mb-2"><i class="fa fa-star yellow"></i> 5.0 (8 reviews)</div>
+													<div class="d-flex align-items-center">
+														<img class="icon-14px mr-1" src="image/location.png" /> 
+														<span class="gilroy-medium font-14">Dubai</span>
+													</div>
+												</div>												
+												<div>												
+													<img class="icon-24px mr-1" src="image/save.png">
+												</div>
+											</div>
+										</div>						
+										<div>										
+											<div class="d-flex align-items-center justify-content-between">												
+												<div><p class="gilroy-medium font-14 text-23242c opacity-0-6 mb-0">Free Cancelation</p></div>												
+												<div>
+													<span class="gilroy-medium font-16 text-fe2f70"><span>$40<span> / <span>$Night<span></span></span></span></span></span>												
+												</div>
+											</div>
+										</div>												
+									</div>							
+								</div>							
+							</li>							
+							<li>
+								<div class="hotels-grid">
+									<div><img src="image/peral.png" /></div>													
+									<div class="d-flex flex-column justify-content-between">
+										<div>
+											<div class="d-flex justify-content-between">												
+												<div>												
+													<h4 class="gilroy-semi font-24 mb-1">Peral Continental One Hotel</h4>
+													<div class="gilroy-medium font-14 mb-2"><i class="fa fa-star yellow"></i> 5.0 (8 reviews)</div>
+													<div class="d-flex align-items-center">
+														<img class="icon-14px mr-1" src="image/location.png" /> 
+														<span class="gilroy-medium font-14">Dubai</span>
+													</div>
+												</div>												
+												<div>												
+													<img class="icon-24px mr-1" src="image/save.png">
+												</div>
+											</div>
+										</div>						
+										<div>										
+											<div class="d-flex align-items-center justify-content-between">												
+												<div><p class="gilroy-medium font-14 text-23242c opacity-0-6 mb-0">Free Cancelation</p></div>												
+												<div>
+													<span class="gilroy-medium font-16 text-fe2f70"><span>$40<span> / <span>$Night<span></span></span></span></span></span>												
+												</div>
+											</div>
+										</div>												
+									</div>							
+								</div>							
+							</li>							
+							<li>
+								<div class="hotels-grid">
+									<div><img src="image/rectangle-23.png" /></div>													
+									<div class="d-flex flex-column justify-content-between">
+										<div>
+											<div class="d-flex justify-content-between">												
+												<div>												
+													<h4 class="gilroy-semi font-24 mb-1">Royalton Hotel</h4>
+													<div class="gilroy-medium font-14 mb-2"><i class="fa fa-star yellow"></i> 5.0 (8 reviews)</div>
+													<div class="d-flex align-items-center">
+														<img class="icon-14px mr-1" src="image/location.png" /> 
+														<span class="gilroy-medium font-14">Dubai</span>
+													</div>
+												</div>												
+												<div>												
+													<img class="icon-24px mr-1" src="image/save.png">
+												</div>
+											</div>
+										</div>						
+										<div>										
+											<div class="d-flex align-items-center justify-content-between">												
+												<div><p class="gilroy-medium font-14 text-23242c opacity-0-6 mb-0">Free Cancelation</p></div>												
+												<div>
+													<span class="gilroy-medium font-16 text-fe2f70"><span>$40<span> / <span>$Night<span></span></span></span></span></span>												
+												</div>
+											</div>
+										</div>												
+									</div>							
+								</div>							
+							</li>							
+							<li>
+								<div class="hotels-grid">
+									<div><img src="image/midway.png" /></div>													
+									<div class="d-flex flex-column justify-content-between">
+										<div>
+											<div class="d-flex justify-content-between">												
+												<div>												
+													<h4 class="gilroy-semi font-24 mb-1">Midway Two One Hotel</h4>
+													<div class="gilroy-medium font-14 mb-2"><i class="fa fa-star yellow"></i> 5.0 (8 reviews)</div>
+													<div class="d-flex align-items-center">
+														<img class="icon-14px mr-1" src="image/location.png" /> 
+														<span class="gilroy-medium font-14">Dubai</span>
+													</div>
+												</div>												
+												<div>												
+													<img class="icon-24px mr-1" src="image/save.png">
+												</div>
+											</div>
+										</div>						
+										<div>										
+											<div class="d-flex align-items-center justify-content-between">												
+												<div><p class="gilroy-medium font-14 text-23242c opacity-0-6 mb-0">Free Cancelation</p></div>												
+												<div>
+													<span class="gilroy-medium font-16 text-fe2f70"><span>$40<span> / <span>$Night<span></span></span></span></span></span>												
+												</div>
+											</div>
+										</div>												
+									</div>							
+								</div>							
+							</li>																																																	
+						</ul>
+						<ul class="trippbo-pagination">
+							<li><a class="trippbo-pagination-disabled" href="javascript:void(0)"><i class="fa fa-angle-left"></i></a></li>
+							<li><a class="trippbo-pagination-active" href="javascript:void(0)">1</a></li>
+							<li><a href="javascript:void(0)">2</a></li>
+							<li><a href="javascript:void(0)">3</a></li>
+							<li><a href="javascript:void(0)">4</a></li>
+							<li><a href="javascript:void(0)">5</a></li>
+							<li><a class="trippbo-pagination-dots" href="javascript:void(0)">...</a></li>
+							<li><a href="javascript:void(0)">25</a></li>
+							<li><a href="javascript:void(0)"><i class="fa fa-angle-right"></i></a></li>
+						</ul>						
+					</main>				
+				</div>				
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper mb-3">
+                <div class="column-holder">
+                    <div class="column-medium-6">
+                        <div class="footer-logo">
+                            <img src="image/trippbo-white.svg" />
+                        </div>
+
+                        <div class="social-links margintop-3">
+                            <a href="javascript:void(0)">
+                                <img src="image/fb-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)" class="marginhor-3">
+                                <img src="image/insta-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="image/linkedin-white.svg" style="height: 40px;" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4 class="gilroy-semi">Menu</h4>
+                        <ul class="d-grid grid-columns-auto-1">
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Conditions</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Privacy Policy</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4 class="gilroy-semi">Popular Cities</h4>
+                        <ul class="d-grid grid-columns-auto-2">
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Thailand</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Thailand</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Norway</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Norway</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Pakistan</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Pakistan</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Dubai</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Dubai</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="wrapper">
+                    <div class="column-holder align-items-center justify-content-between">
+                        <div class="column-medium-6">
+                            <p>Subscribe our Newsletter</p>
+                            <div class="newsletter">
+                                <input type="email" placeholder="Email" />
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="column-medium-6 margintop-3 margintop-medium-0 text-white mt-3">
+                            © trippbo.com, Inc. All rights reserved 2021.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/hotels.js"></script>	
+	<script>
+	$('#myTab a').on('click', function (event) {
+		event.preventDefault()
+		$(this).tab('show')
+	});
+	</script>
+</body>
+</html>

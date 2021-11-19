@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.png"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="wrapper-full">
+            <div class="d-flex space-between vcenter flex-wrap">
+                <button class="icon" onclick="myFunction()">
+                    <img src="image/hamburger.svg" style="height: 16px;" />
+                </button>
+                <a href="/" class="brand">
+                    <img src="image/trippbo-logo.png">
+                </a>
+                <div class="menus">
+                    <a href="#">BOOK A TRIP</a>
+                    <a href="#">FUND MY TRIP</a>
+                    <a href="#">FUND MY TRIP <span>SOLO</span></a>
+                    <a href="#">TICKETS LOTTERY</a>
+                </div>
+                <div class="headerOpt-right">
+                    <ul>
+                        <li>
+                            <a href="javascript:void(0)">
+                                <img src="image/bell.svg">
+                            </a>
+                        </li>
+                        <li class="messages">
+                            <a href="javascript:void(0)">
+                                Messages
+                            </a>
+                        </li>
+                        <li class="avatar">
+                            <a href="javascript:void(0)">
+                                Ahmad <img src="image/caret-down-white.svg" style="height:14px">
+                            </a>
+                            <img src="image/prof-img.png" class="avatar_rounded">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+        <section class="pb-5">
+            <div class="wrapper">
+                <div class="breadcrumb_ mb-4">
+                    <ol class="">
+                        <li class="breadcrumb-item">
+                            <a>Hotel</a>
+                        </li>
+                        <li class="breadcrumb-item active">Review and check out</li>
+                    </ol>
+                </div>
+				<div class="d-flex align-items-center mb-3">
+					<div><i class="fa fa-angle-left font-26 text-23242c mr-3"></i></div>									
+					<div><h4 class="gilroy-semi font-30 text-23242c mb-0">Secure booking - only takes a few minutes!</h4></div>
+				</div>
+				<div class="img-block bg-000941 p-4 mb-3 ml-3">
+					<div><i class="fa fa-exclamation-triangle font-20 text-white"></i></div>
+					<div>
+						<p class="gilroy-regular font-12 text-white mb-0">COVID-19 alert: Travel requirements are changing rapidly, including need for pre-travel COVID-19 testing and quarantine on arrival.</p>
+						<p class="mb-0"><a class="btn btn-link gilroy-semi font-12 text-decoration-underline text-white p-0" href="#">Check restrictions for your trip</a></p>
+					</div>													
+				</div>	
+				<div class="row mx-0">
+					<div class="col-sm-12 col-lg-8">						
+						<div class="mb-3 border-d2d2d2 p-3">
+							<h4 class="gilroy-semi font-28 text-23242c mb-3">Who's traveling?</h4>
+							<p class="gilroy-regular font-12 text-23242c mb-4">Traveler names must match government-issued photo ID exactly.</p>													
+							<div class="row">									
+								<div class="col-sm-12 col-lg-4 mb-3">
+									<div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" placeholder="First name" /></div>								
+								</div>								
+								<div class="col-sm-12 col-lg-4 mb-3">
+									<div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" placeholder="Middle Name" /></div>								
+								</div>									
+								<div class="col-sm-12 col-lg-4 mb-3">
+									<div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" placeholder="Last Name" /></div>								
+								</div>						
+							</div>							
+							<div class="row">									
+								<div class="col-sm-12 mb-3">
+									<div class="position-relative inputField-box">
+										<select class="inputField inputField-withicon pl-3">
+											<option value="1" selected="">Select Country</option>
+											<option value="2"></option>
+										</select>									
+									</div>									
+								</div>													
+							</div>							
+							<div class="row">									
+								<div class="col-sm-12 mb-3">
+									<div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" placeholder="Phone number" /></div>								
+								</div>													
+							</div>
+							<div class="row">									
+								<div class="col-sm-12 mb-3">
+									<div class="position-relative inputField-box">
+										<select class="inputField inputField-withicon pl-3">
+											<option value="1" selected="">Select Passport</option>
+											<option value="2"></option>
+										</select>									
+									</div>									
+								</div>													
+							</div>							
+							<p class="font-12 text-black gilroy-semi">Gender</p>
+							<div class="d-flex align-items-center mb-3">
+								<div class="mr-3"><label class="d-flex align-items-center radio-container gilroy-semi font-20 m-0">Male<input type="radio" checked="checked" name="gender"><span class="checkmark"></span></label></div>														
+								<div><label class="d-flex align-items-center radio-container gilroy-semi font-20 m-0">Female<input type="radio" name="gender"><span class="checkmark"></span></label></div>														
+							</div>							
+							<div class="row">									
+								<div class="col-sm-12 mb-3">
+									<div class="position-relative icon-right"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" placeholder="Select DOB"> <img src="image/policy.png"></div>									
+								</div>													
+							</div>
+							<p class="font-12 text-black gilroy-semi">Seat selection</p>							
+							<div class="mb-4"><button type="button" class="btn btn-000941 px-5">Choose Seat</button></div>
+							<h4 class="gilroy-medium font-20 text-fe2f70 mb-4">Frequent flyer, TSA PreCheck, redress and more <img class="icon-12px" src="image/caret-up.png" /></h4>							
+							<p class="font-12 text-black gilroy-semi">Frequent flyer program</p>
+							<div class="row">									
+								<div class="col-sm-12 mb-3">
+									<div class="position-relative inputField-box">
+										<select class="inputField inputField-withicon pl-3">
+											<option value="1" selected="">Select Passport</option>
+											<option value="2"></option>
+										</select>									
+									</div>									
+								</div>													
+							</div>								
+							<p class="gilroy-regular font-12 text-23242c mb-4">We share program details with the airline, though we cannot guarantee point awards.</p>							
+							<div class="row">									
+								<div class="col-sm-12 mb-3">
+									<div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" placeholder="Redress number" /></div>								
+								</div>													
+							</div>							
+							<div class="row">									
+								<div class="col-sm-12 mb-3">
+									<div class="position-relative inputField-box">
+										<select class="inputField inputField-withicon pl-3">
+											<option value="1" selected="">Special assistance</option>
+											<option value="2"></option>
+										</select>									
+									</div>									
+								</div>													
+							</div>							
+							<p class="gilroy-regular font-12 text-23242c mb-4">Please contact the airline to confirm special assistance requests.</p>							
+							<div class="row">									
+								<div class="col-sm-12 mb-3">
+									<div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" placeholder="Emergency contact name" /></div>								
+								</div>													
+							</div>								
+							<div class="row">									
+								<div class="col-sm-12 mb-3">
+									<div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" placeholder="Emergency contact name" /></div>								
+								</div>													
+							</div>							
+							<div class="row">									
+								<div class="col-sm-12 mb-3">
+									<div class="position-relative inputField-box">
+										<select class="inputField inputField-withicon pl-3">
+											<option value="1" selected="">Country/Territory Code</option>
+											<option value="2"></option>
+										</select>									
+									</div>									
+								</div>													
+							</div>								
+							<div class="row">									
+								<div class="col-sm-12 mb-3">
+									<div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" placeholder="Phone Number" /></div>								
+								</div>													
+							</div>															
+						</div>							
+						<div class="mb-3 border-d2d2d2 p-3">
+							<div class="d-flex align-items-center justify-content-between mb-3">
+								<div><h4 class="gilroy-semi font-28 text-23242c">Protect your flight</h4></div>										
+								<div>
+									<span class="badge-green">Recommended</span>								
+								</div>					
+							</div>							
+							<div class="img-block bg-fafafa p-4 mb-3">
+								<div>
+									<div class="d-flex flex-column">									
+										<div class="text-center"><i class="fa fa-info-circle font-20"></i></div>
+										<div><span class="gilroy-semi font-12">Important</span></div>
+									</div>
+								</div>
+								<div>
+									<p class="gilroy-regular font-12 mb-0">COVID-19 alert: Travel requirements are changing rapidly, including need for pre-travel COVID-19 testing and quarantine on arrival.</p>
+									<p class="mb-0"><a class="btn btn-link gilroy-semi font-12 text-decoration-underline text-fe2f70 p-0" href="#">Learn more</a></p>
+								</div>													
+							</div>
+							<h4 class="gilroy-medium font-16 text-fe2f70 mb-4">Coverage includes trip cancellation, trip interruption, and much more. See top benefits: <img class="icon-12px" src="image/caret-up.png" /></h4>
+							<p class="font-16 gilroy-regular text-000941 mb-2">Get up to:</p>
+							<ol class="list-unstyled gilroy-regular text-000941 font-16 mb-3">
+								<li>1. 100% flight reimbursement if you're sick and can't travel</li>
+								<li>2. $1,000 for covered lost baggage, including laptop, phone or camera</li>
+								<li>3. $50,000 for covered emergency medical transportation</li>
+							</ol>
+							<div class="d-flex align-items-center mb-3">									
+								<div class="mr-2"><h4 class="gilroy-medium mb-0"><a class="btn btn-link gilroy-semi font-16 text-decoration-underline text-000941 p-0" href="#">View insurance details and disclosures</a></h4></div>
+								<div><i class="fa fa-copy font-18"></i></div>
+							</div>							
+							<h4 class="gilroy-semi font-14 text-23242c opacity-0-5 mb-3">Select Yes or No to continue booking</h4>
+							<div class="recommended border-fe2f70 mb-3 p-4">
+								<div class="d-flex flex-row-responsive align-items-center justify-content-between">
+									<div><label class="radio-container gilroy-semi font-16 m-0">Yes, I want to add the Flight Protection Plan to my flight to Dubai.<input type="radio" checked="checked" name="flight"><span class="checkmark"></span></label></div>										
+									<div>
+										<span class="gilroy-semi text-fe2f70 font-16">$8.00</span> <span class="gilroy-regular font-16">/ Person</span>								
+									</div>					
+								</div>													
+							</div>
+							<div class="mb-3 p-4">
+								<label class="radio-container gilroy-semi font-16 m-0">No, I'm willing to risk my $800.53 flight. I understand by declining this coverage that I may be responsible for cancellation fees and delay expenses personally or through alternate coverage.<input type="radio" name="flight"><span class="checkmark"></span></label>				
+							</div>														
+						</div>						
+			
+			
+			
+						<div class="bg-white border-d2d2d2 p-4 mb-4">
+							<h4 class="gilroy-semi font-26 mb-3">How would you like to pay?</h4>
+							<div class="d-flex align-items-center mb-2"><img class="icon-12px mr-2" src="image/double-check.png"><span class="gilroy-regular font-16 text-23242c">We use secure transmission</span></div>							
+							<div class="d-flex align-items-center mb-4"><img class="icon-12px mr-2" src="image/double-check.png"><span class="gilroy-regular font-16 text-23242c">We protect your personal information</span></div>							
+							<h4 class="gilroy-semi font-26 mb-4">Pay with</h4>
+							<div class="trippbo-bar px-3">
+								<button class="gilroy-semi font-14 tablink trippbo-active" onclick="openCity(event,'Credit')"><i class="fa fa-credit-card mr-2"></i> Credit / Debit Card</button>
+								<button class="gilroy-semi font-14 tablink" onclick="openCity(event,'Paypal')"><i class="fa fa-paypal mr-2"></i> Paypal</button>
+							</div>
+							<div id="Credit" class="trippbo-container city">
+								<div class="position-relative inputField-box mb-3"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" value="Card Number" /></div>
+								<div class="row">
+									<div class="col-sm-12 col-lg-6 mb-3">
+										<div class="position-relative icon-right"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" value="Expiration" /> <img src="image/expiration.png" /></div>							
+									</div>									
+									<div class="col-sm-12 col-lg-6 mb-3">
+										<div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" value="CVV" /></div>								
+									</div>						
+								</div>
+								<div class="row">									
+									<div class="col-sm-12 mb-3">
+										<div class="position-relative inputField-box">
+											<select class="inputField inputField-withicon pl-3">
+												<option value="1" selected="">Country/Territory Code</option>
+												<option value="2"></option>
+											</select>									
+										</div>									
+									</div>													
+								</div>
+								<div class="row">									
+									<div class="col-sm-12 mb-3">
+										<div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" placeholder="Billing address 1" /></div>								
+									</div>													
+								</div>								
+								<div class="row">									
+									<div class="col-sm-12 mb-3">
+										<div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" placeholder="Billing address 2" /></div>								
+									</div>													
+								</div>								
+								<div class="row">									
+									<div class="col-sm-12 col-lg-6 mb-3">
+										<div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" placeholder="City" /></div>								
+									</div>										
+									<div class="col-sm-12 col-lg-6 mb-3">
+										<div class="position-relative inputField-box">
+											<select class="inputField inputField-withicon pl-3">
+												<option value="1" selected="">State</option>
+												<option value="2"></option>
+											</select>									
+										</div>									
+									</div>													
+								</div>								
+								<div class="row">									
+									<div class="col-sm-12 col-lg-6 mb-0">
+										<div class="position-relative inputField-box"><input type="text" class="inputField inputField-withicon pl-3 gilroy-medium font-14" placeholder="Zip Code" /></div>								
+									</div>													
+								</div>
+								
+							</div>
+							<div id="Paypal" class="trippbo-container city" style="display:none">
+								<h2>Paypal</h2>
+							</div>							
+						</div>						
+						<div class="bg-white border-d2d2d2 p-4 mb-4">
+							<h4 class="gilroy-semi font-28 mb-2">Manage your booking</h4>
+							<p class="gilroy-semi font-14 text-23242c mb-2">Confirmation email</p>												
+							<p class="gilroy-medium font-14 text-23242c mb-2">Please enter the email address where you would like to receive your confirmation</p>												
+							<div class="position-relative inputField-box"><input type="email" class="inputField inputField-withicon pl-3 gilroy-medium font-14" value="" placeholder="Description" /></div>
+						</div>							
+						<div class="bg-fafafa mb-3 p-3">
+							<h4 class="gilroy-semi font-28 mb-2">Review and book your trip</h4>
+							<div class="d-flex align-items-center mb-3"><img class="icon-12px mr-2" src="image/double-check.png"><span class="gilroy-regular font-14 text-23242c">Free cancellation within <a class="btn btn-link text-fe2f70 font-16 p-0" href="#">24 hours of booking!</a></span></div>							
+							
+							<ol class="list-unstyled gilroy-regular text-000941 font-14 mb-3">
+								<li>1. ew your trip details to make sure the dates and times are correct.</li>
+								<li>2. k your spelling. Flight passenger names must match government-issued photo ID exactly.</li>
+								<li>3. ew the terms of your booking</li>
+							</ol>							
+							<p class="gilroy-medium font-14 text-23242c">By selecting to complete this booking I acknowledge that I have read and accept the <a class="btn btn-link text-fe2f70 font-16 p-0" href="#">Rules & Restrictions</a> Opens in a new window, Terms of Use Opens in a new window, <a class="btn btn-link text-fe2f70 font-16 p-0" href="#">Privacy Policy</a> Opens in a new window, and Government Travel Advice Opens in a new window.</p>																			
+							<div class="mb-4"><button type="button" class="btn gilroy-medium btn-fe2f70 box-shadow-fe2f70 px-5">Complete Booking</button></div>
+							<div class="d-flex mb-4">
+								<div><i class="fa fa-lock font-26 text-23242c mr-3 mt-1"></i></div>
+								<div><span class="gilroy-regular font-14 text-23242c">We use secure transmission and encrypted storage to protect your personal information.</span></div>
+							</div>						
+						</div>
+						
+					</div>						
+					<div class="col-sm-12 col-lg-4">
+						<div class="reserve-card bg-fafafa mb-3">
+							<div class="p-4">
+								<h4 class="gilroy-semi font-24 line-height-24px text-23242c mb-2">One way flight</h4>
+								<p class="font-14 text-black gilroy-semi mb-4">1 ticket: 1 adult</p>
+								<p class="font-16 text-black gilroy-regular mb-1">Lahore (LHE) to Dubai (DXB)</p>
+								<p class="font-14 text-black gilroy-semi mb-3">Tue, Jun 15</p>
+								<p class="font-12 text-black gilroy-regular mb-3">3:50am - 9:10pm (18h 20m)<br />13h 25m stop in DOH</p>
+								<div class="d-flex align-items-center mb-3"><img class="icon-16px mr-2" src="image/qatar.png"><span class="gilroy-regular font-12 text-23242c">Qatar Airways 621</span></div>								
+								<span class="badge-green font-12">No Fee changes</span>
+								<hr />
+								<p class="font-14 text-black gilroy-semi mb-1">No Change Fees</p>
+								<p class="font-12 text-black gilroy-regular mb-3">Qatar Airways is waiving change fees for your flights.</p>								
+								<div class="d-flex align-items-center mb-3">									
+									<div class="mr-2"><h4 class="gilroy-medium mb-0"><a class="btn btn-link gilroy-semi font-12 text-decoration-underline text-fe2f70 p-0" href="#">See policy</a></h4></div>
+									<div><i class="fa fa-copy text-fe2f70 font-12"></i></div>
+								</div>	
+								<hr />
+								<h4 class="gilroy-semi font-20 line-height-24px text-23242c mb-3">Your price summary</h4>
+								<div class="d-flex align-items-center justify-content-between mb-3">
+									<div><p class="gilroy-medium font-14 mb-0">Traveler 1: Adult</p></div>									
+									<div><span class="gilroy-regular font-14">$800.53</span></div>					
+								</div>										
+								<div class="d-flex align-items-center justify-content-between mb-3">
+									<div><p class="gilroy-medium font-14 mb-0">Flight</p></div>									
+									<div><span class="gilroy-regular font-14">$500</span></div>					
+								</div>										
+								<div class="d-flex align-items-center justify-content-between mb-3">
+									<div><p class="gilroy-medium font-14 mb-0">Taxes</p></div>									
+									<div><span class="gilroy-regular font-14">$100</span></div>					
+								</div>								
+								<hr />								
+								<div class="d-flex justify-content-between">
+									<div><span class="gilroy-semi font-20 text-23242c">Total</span></div>										
+									<div><span class="gilroy-semi font-20 text-23242c">$81.74</span></div>									
+								</div>
+							</div>
+						</div>
+						<div class="img-block bg-fafafa p-4 mb-3">
+							<div><img src="image/calender.png"></div>
+							<div>
+								<p class="gilroy-semi font-16 text-1f2223 mb-0">Free Cancelation</p>
+								<p class="gilroy-regular font-14 text-1f2223 mb-0">There's no fee to cancel within 24 hours of booking.</p>
+							</div>													
+						</div>						
+					</div>				
+				</div>				
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper mb-3">
+                <div class="column-holder">
+                    <div class="column-medium-6">
+                        <div class="footer-logo">
+                            <img src="image/trippbo-white.svg" />
+                        </div>
+
+                        <div class="social-links margintop-3">
+                            <a href="javascript:void(0)">
+                                <img src="image/fb-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)" class="marginhor-3">
+                                <img src="image/insta-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="image/linkedin-white.svg" style="height: 40px;" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4 class="gilroy-semi">Menu</h4>
+                        <ul class="d-grid grid-columns-auto-1">
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Conditions</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Privacy Policy</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4 class="gilroy-semi">Popular Cities</h4>
+                        <ul class="d-grid grid-columns-auto-2">
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Thailand</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Thailand</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Norway</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Norway</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Pakistan</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Pakistan</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Dubai</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Dubai</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="wrapper">
+                    <div class="column-holder align-items-center justify-content-between">
+                        <div class="column-medium-6">
+                            <p>Subscribe our Newsletter</p>
+                            <div class="newsletter">
+                                <input type="email" placeholder="Email" />
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="column-medium-6 margintop-3 margintop-medium-0 text-white mt-3">
+                            © trippbo.com, Inc. All rights reserved 2021.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/custom.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script>
+	$('#myTab a').on('click', function (event) {
+		event.preventDefault()
+		$(this).tab('show')
+	});
+	</script>
+</body>
+</html>

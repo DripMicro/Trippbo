@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.png"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-multiselect/0.9.13/css/bootstrap-multiselect.css">		
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/css/bootstrap-datepicker.min.css">		
+	<script src="https://kit.fontawesome.com/aad9309da9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="wrapper-full">
+            <div class="d-flex space-between vcenter flex-wrap">
+                <button class="icon" onclick="myFunction()"><img src="image/hamburger.svg" style="height: 16px;" /></button>
+                <a href="/" class="brand"><img src="image/trippbo-logo.png"></a>
+                <div class="menus">
+                    <a href="#">BOOK A TRIP</a>
+                    <a href="#">FUND MY TRIP</a>
+                    <a href="#">FUND MY TRIP <span>SOLO</span></a>
+                    <a href="#">TICKETS LOTTERY</a>
+                </div>
+                <div class="headerOpt-right px-4">
+                    <ul>
+                        <li class="mr-2"><a href="#" role="button" class="btn btn-fe2f70 btn-block gilroy-medium font-14 px-4 btn-sign-in">Sign In</a></li>
+                        <li><a href="#" role="button" class="btn btn-outline-fe2f70 btn-block gilroy-medium font-14 px-4 btn-sign-up">Sign Up</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+		<div class="hero-image">
+			<div class="d-flex flex-column align-items-center hero-contents">
+				<div><h2 class="gabriola-regular font-52 text-white mb-0">Experience the Exciting Hotels</h2></div>
+				<div class="mb-4"><h2 class="gabriola-regular font-52 text-white mb-0"><span>with</span> <strong class="gilroy-bold font-58">trippbo</strong></h2></div>
+				<div class="w-100">
+					<div class="bg-white p-3">
+						<div class="trippbo-bar trippbo-bar-padding gilroy-regular font-14">						
+							<button class="tablink d-flex flex-row-responsive align-items-center trippbo-active" onclick="openCity(event,'hotels');"><i class="far fa-building"></i> <span>Hotels</span></button>
+							<button class="tablink d-flex flex-row-responsive align-items-center" onclick="openCity(event,'flights');"><i class="fas fa-plane-departure"></i> <span>Flights</span></button>
+							<button class="tablink d-flex flex-row-responsive align-items-center" onclick="openCity(event,'car');"><i class="fas fa-car"></i> <span>Car</span></button>
+							<button class="tablink d-flex flex-row-responsive align-items-center" onclick="openCity(event,'packages');"><i class="fas fa-suitcase-rolling"></i> <span>Packages</span></button>
+							<button class="tablink d-flex flex-row-responsive align-items-center" onclick="openCity(event,'things');"><i class="fas fa-clipboard-list"></i> <span>Things to do</span></button>						
+						</div>
+						<div id="hotels" class="pt-3 city">
+							<div class="d-flex justify-content-end-responsive-left mb-3">					
+								<div>
+									<div class="trippbo-dropdown">
+										<button class="gilroy-medium text-000941 font-12">1 Room, 2 Travelers <i class="fa fa-angle-down font-14 font-weight-bold ml-1"></i></button>
+										<div>
+											<p class="gilroy-medium font-12 mb-2" onclick="this.parentElement.style.display = 'none';"><img class="icon-10px mr-2 hlg" src="image/close.png" /> Travelers</p>
+											<p class="gilroy-medium font-10 mb-2 text-23242c opacity-0-5">Room 1</p>									
+											<div class="d-flex align-items-center justify-content-between mb-2">
+												<div class="w-60"><span class="gilroy-medium font-12">Adult</span></div>						
+												<div class="w-40">
+													<div id="children-increament" class="increamentor">
+														<div><i class="fa fa-minus-circle increamentor-minus"></i></div>						
+														<div><input type="text" class="increamentor-number" value="1" readonly="readonly"></div>						
+														<div><i class="fa fa-plus-circle increamentor-plus"></i></div>						
+													</div>									
+												</div>						
+											</div>										
+											<div class="d-flex align-items-center justify-content-between mb-2">
+												<div class="w-60"><span class="gilroy-medium font-12">Children</span></div>						
+												<div class="w-40">
+													<div id="children-increament" class="increamentor">
+														<div><i class="fa fa-minus-circle increamentor-minus increamentor-opacity increamentor-not-allowed"></i></div>						
+														<div><input type="text" class="increamentor-number increamentor-opacity" value="0" readonly="readonly"></div>						
+														<div><i class="fa fa-plus-circle increamentor-plus"></i></div>						
+													</div>									
+												</div>						
+											</div>
+											
+											<div class="d-flex align-items-center justify-content-end mb-2">
+												<div><span class="gilroy-semi font-12 text-fe2f70">Add Room</span></div>						
+											</div>									
+											<div><button type="button" class="btn btn-block btn-000941 font-12">Done</button></div>								
+										</div>
+									</div>						
+								</div>									
+							</div>							
+							<div class="form-group row px-2">
+								<div class="col-sm-12 col-lg-6 px-1 mb-2">
+									<div class="flex-grow-1"><div class="position-relative inputField-box w-100"><img class="icon-18px mr-1" src="image/location.png"><input type="text" class="inputField inputField-withicon" placeholder="Destination" /></div></div>
+								</div>
+								<div class="col-sm-6 col-lg-3 px-1 mb-2">
+									<div class="position-relative inputField-box">
+										<img class="icon-18px mr-1" src="image/policy.png"><input type="text" id="DateFrom" class="inputField inputField-withicon" placeholder="Check In date" />                 
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-3 px-1 mb-2">
+									<div class="position-relative inputField-box">
+										<img class="icon-18px mr-1" src="image/policy.png"><input type="text" id="DateTo" class="inputField inputField-withicon" placeholder="Check Out date" />                 
+									</div>
+								</div>
+							</div>	
+							<div class="d-flex align-items-center mb-3">
+								<div class="mr-3"><label class="trippbo-checkbox gilroy-regular">Add Flight<input type="checkbox" checked="checked" name=""><span></span></label></div>
+								<div><label class="trippbo-checkbox gilroy-regular">Add Car<input type="checkbox" checked="checked" name=""><span></span></label></div>
+							</div>
+							<div><button type="button" class="btn btn-block gilroy-medium btn-fe2f70 px-5">Find</button></div>							
+						</div>
+						<div id="flights" class="pt-3 city" style="display:none">
+							<div class="d-flex flex-row-responsive align-items-center-responsive-left justify-content-between mb-3">
+								<div>
+									<div class="trippbo-btn-bar gilroy-medium font-12">
+										<button class="trippbo-btn-active" onclick="openFlights(event,'one-trip');">One Trip</button>
+										<button onclick="openFlights(event,'one-way');">One Way</button>
+										<button onclick="openFlights(event,'multi-city');">Multi-City</button>
+									</div>
+								</div>						
+								<div>
+									<div class="trippbo-dropdown">
+										<button class="gilroy-medium text-000941 font-12">1 Room, 2 Travelers <i class="fa fa-angle-down font-14 font-weight-bold ml-1"></i></button>
+										<div>
+											<p class="gilroy-medium font-12 mb-2" onclick="this.parentElement.style.display = 'none';"><img class="icon-10px mr-2 hlg" src="image/close.png" /> Travelers</p>
+											<p class="gilroy-medium font-10 mb-2 text-23242c opacity-0-5">Room 1</p>									
+											<div class="d-flex align-items-center justify-content-between mb-2">
+												<div class="w-60"><span class="gilroy-medium font-12">Adult</span></div>						
+												<div class="w-40">
+													<div id="children-increament" class="increamentor">
+														<div><i class="fa fa-minus-circle increamentor-minus"></i></div>						
+														<div><input type="text" class="increamentor-number" value="1" readonly="readonly"></div>						
+														<div><i class="fa fa-plus-circle increamentor-plus"></i></div>						
+													</div>									
+												</div>						
+											</div>									
+											<div class="d-flex align-items-center justify-content-between mb-2">
+												<div class="w-60"><span class="gilroy-medium font-12">Children</span></div>						
+												<div class="w-40">
+													<div id="children-increament" class="increamentor">
+														<div><i class="fa fa-minus-circle increamentor-minus increamentor-opacity increamentor-not-allowed"></i></div>						
+														<div><input type="text" class="increamentor-number increamentor-opacity" value="0" readonly="readonly"></div>						
+														<div><i class="fa fa-plus-circle increamentor-plus"></i></div>						
+													</div>									
+												</div>						
+											</div>									
+											<div class="d-flex align-items-center justify-content-end mb-2">
+												<div><span class="gilroy-semi font-12 text-fe2f70">Add Room</span></div>						
+											</div>									
+											<div><button type="button" class="btn btn-block btn-000941 font-12">Done</button></div>								
+										</div>
+									</div>						
+									<div class="trippbo-dropdown">
+										<button class="gilroy-medium text-000941 font-12">Economy <i class="fa fa-angle-down font-14 font-weight-bold ml-1"></i></button>
+										<div class="p-0 min-width-175px">
+											<button type="button" class="btn btn-block text-left hlg" onclick="this.parentElement.style.display = 'none';"><img class="icon-10px mr-2 hlg" src="image/close.png" /></button>
+											 
+											<ul>
+												<li><a class="btn gilroy-medium font-12 trippbo-dropdown-active">Econmoy</a></li>
+												<li><a class="btn gilroy-medium font-12">Premium Economy</a></li>
+												<li><a class="btn gilroy-medium font-12">Business</a></li>
+												<li><a class="btn gilroy-medium font-12">First</a></li>
+											</ul>
+										</div>										
+									</div>
+								</div>									
+							</div>							
+							<div id="one-trip" class="flight">
+								<div class="trippbo-flights-input-bar">
+									<div>
+										<div class="d-flex flex-row-responsive">
+											<div class="flex-grow-1 mb-2 mr-1-lg"><div class="position-relative inputField-box w-100"><img class="icon-18px mr-1" src="image/location.png"><input type="text" class="inputField inputField-withicon" placeholder="Leaving"></div></div>								
+											<div class="flex-grow-1"><div class="position-relative inputField-box w-100"><img src="image/arrow-right-shadow.svg" class="field-connector"><img class="icon-18px mr-1" src="image/location.png"><input type="text" class="inputField inputField-withicon" placeholder="Going"></div></div>						
+										</div>						
+									</div>
+									<div>
+										<div class="position-relative inputField-box">
+											<img src="image/policy.png" class="icon-18px mr-1">
+											<input type="text" id="DateFrom" class="inputField inputField-withicon" placeholder="Departing">                 
+										</div>
+									</div>
+									<div>
+										<div class="position-relative inputField-box">
+											<img src="image/policy.png" class="icon-18px mr-1">
+											<input type="text" id="DateTo" class="inputField inputField-withicon" placeholder="Returning">                 
+										</div>
+									</div>
+								</div>								
+							</div>
+							<div id="one-way" class="flight" style="display: none;">
+								<h2>One Way</h2>
+							</div>								
+							<div id="multi-city" class="flight" style="display: none;">
+								<h2>Multi-City</h2>
+							</div>							
+
+							<div><button type="button" class="btn btn-block gilroy-medium btn-fe2f70 px-5">Find</button></div>
+						</div>							
+						<div id="car" class="pt-3 city" style="display:none">
+							<div class="d-flex align-items-center justify-content-between mb-3">
+								<div>
+									<div class="trippbo-btn-bar gilroy-medium font-12">
+										<button class="trippbo-btn-active" onclick="openCars(event,'trips');">Rental Trips</button>
+										<button onclick="openCars(event,'transportation');">Airport transportation</button>
+									</div>
+								</div>															
+							</div>							
+							<div id="trips" class="car">
+								<div class="trippbo-car-input-bar">
+									<div>
+										<div class="d-flex flex-row-responsive">
+											<div class="flex-grow-1 mb-2-sm mr-1-lg"><div class="position-relative inputField-box w-100"><img class="icon-18px mr-1" src="image/location.png"><input type="text" class="inputField inputField-withicon" placeholder="Pickup"></div></div>								
+											<div class="flex-grow-1"><div class="position-relative inputField-box w-100"><img src="image/icon-arrow-right.svg" class="field-connector"><img class="icon-18px mr-1" src="image/location.png"><input type="text" class="inputField inputField-withicon" placeholder="Destination"></div></div>						
+										</div>						
+									</div>
+									<div>
+										<div class="position-relative inputField-box">
+											<img src="image/policy.png" class="icon-18px mr-1">
+											<input type="text" id="DateFrom" class="inputField inputField-withicon" placeholder="Pickup Date">                 
+										</div>
+									</div>
+									<div>
+										<div class="position-relative inputField-box">
+											<img src="image/policy.png" class="icon-18px mr-1">
+											<input type="text" id="DateTo" class="inputField inputField-withicon" placeholder="Drop Off Date">                 
+										</div>
+									</div>
+								</div>	
+								<div class="trippbo-car-input-bar-2">
+									<div>
+										<div class="position-relative inputField-box">
+											<img src="image/clock.png" class="icon-18px mr-1">
+											<input type="text" id="DateFrom" class="inputField inputField-withicon" placeholder="Pickup Time">                 
+										</div>
+									</div>
+									<div>
+										<div class="position-relative inputField-box">
+											<img src="image/clock.png" class="icon-18px mr-1">
+											<input type="text" id="DateTo" class="inputField inputField-withicon" placeholder="Drop off Time">                 
+										</div>
+									</div>
+								</div>	
+								<div class="d-flex flex-row-responsive align-items-center-responsive-left justify-content-between mb-3">
+									<div>
+										<div><label class="trippbo-checkbox gilroy-medium">Include AARP member rates<br/><b class="gilroy-regular font-10">Membership is required and verified at pick-up.</b><input type="checkbox" checked="checked" name=""><span></span></label></div>
+									</div>						
+									<div>
+										<div class="trippbo-dropdown">
+											<button class="gilroy-medium text-000941 font-12">I have a discount code <i class="fa fa-angle-down font-14 font-weight-bold ml-1"></i></button>
+											<div>
+												<p class="gilroy-medium font-12 mb-2" onclick="this.parentElement.style.display = 'none';"><img class="icon-10px mr-2 hlg" src="image/close.png" /> Travelers</p>
+												<p class="gilroy-medium font-10 mb-2 text-23242c opacity-0-5">Room 1</p>									
+												<div class="d-flex align-items-center justify-content-between mb-2">
+													<div class="w-60"><span class="gilroy-medium font-12">Adult</span></div>						
+													<div class="w-40">
+														<div id="children-increament" class="increamentor">
+															<div><i class="fa fa-minus-circle increamentor-minus"></i></div>						
+															<div><input type="text" class="increamentor-number" value="1" readonly="readonly"></div>						
+															<div><i class="fa fa-plus-circle increamentor-plus"></i></div>						
+														</div>									
+													</div>						
+												</div>									
+												<div class="d-flex align-items-center justify-content-between mb-2">
+													<div class="w-60"><span class="gilroy-medium font-12">Children</span></div>						
+													<div class="w-40">
+														<div id="children-increament" class="increamentor">
+															<div><i class="fa fa-minus-circle increamentor-minus increamentor-opacity increamentor-not-allowed"></i></div>						
+															<div><input type="text" class="increamentor-number increamentor-opacity" value="0" readonly="readonly"></div>						
+															<div><i class="fa fa-plus-circle increamentor-plus"></i></div>						
+														</div>									
+													</div>						
+												</div>									
+												<div class="d-flex align-items-center justify-content-end mb-2">
+													<div><span class="gilroy-semi font-12 text-fe2f70">Add Room</span></div>						
+												</div>									
+												<div><button type="button" class="btn btn-block btn-000941 font-12">Done</button></div>								
+											</div>
+										</div>						
+									</div>									
+								</div>									
+							</div>
+							<div id="transportation" class="car" style="display: none;">
+								<h2>Airport transportation</h2>
+							</div>						
+							<div><button type="button" class="btn btn-block gilroy-medium btn-fe2f70 px-5">Find</button></div>
+						</div>							
+						<div id="packages" class="pt-3 city" style="display:none">
+							<p class="gilroy-regular font-12">Choose one or more items to build your trip:</p>
+							<div class="trippbo-rounded-btn-bar gilroy-regular mb-3">
+								<button class="btn font-12 trippbo-rounded-btn-active">Stay Added</button>
+								<button class="btn font-12">Add A Flight</button>
+								<button class="btn font-12">Car added</button>
+							</div>														
+							<div class="trippbo-packages-input-bar">
+								<div>
+									<div class="d-flex flex-row-responsive">
+										<div class="flex-grow-1 mb-2 mr-1-lg"><div class="position-relative inputField-box w-100"><img class="icon-18px mr-1" src="image/location.png"><input type="text" class="inputField inputField-withicon" placeholder="Leaving"></div></div>								
+										<div class="flex-grow-1"><div class="position-relative inputField-box w-100"><img src="image/3388.svg" class="field-connector"><img class="icon-18px mr-1" src="image/location.png"><input type="text" class="inputField inputField-withicon" placeholder="Going"></div></div>						
+									</div>						
+								</div>
+								<div>
+									<div class="position-relative inputField-box">
+										<img src="image/policy.png" class="icon-18px mb-2"><input type="text" id="DateFrom" class="inputField inputField-withicon" placeholder="Departing">                 
+									</div>
+								</div>
+								<div>
+									<div class="position-relative inputField-box">
+										<img src="image/policy.png" class="icon-18px mr-1"><input type="text" id="DateTo" class="inputField inputField-withicon" placeholder="Returning">                 
+									</div>
+								</div>
+							</div>	
+							<div><button type="button" class="btn btn-block gilroy-medium btn-fe2f70 px-5">Find</button></div>
+						</div>
+						<div id="things" class="pt-3 city" style="display:none">
+							<div class="d-flex mb-3">														
+								<p class="gilroy-medium font-12">Looking for sports, concerts, or music festivals? <a class="btn btn-link gilroy-semi font-12 text-fe2f70 p-0" href="#">Search event tickets</a></p>
+							</div>							
+							<div class="form-group row px-2">
+								<div class="col-sm-12 col-lg-6 px-1 mb-2">
+									<div class="flex-grow-1"><div class="position-relative inputField-box w-100"><img class="icon-18px mr-1" src="image/location.png"><input type="text" class="inputField inputField-withicon" placeholder="Things to do" /></div></div>
+								</div>
+								<div class="col-sm-6 col-lg-3 px-1 mb-2">
+									<div class="position-relative inputField-box">
+										<img class="icon-18px mr-1" src="image/policy.png"><input type="text" id="todo-date-from" class="inputField inputField-withicon" placeholder="From" />                 
+									</div>
+								</div>
+								<div class="col-sm-6 col-lg-3 px-1 mb-2">
+									<div class="position-relative inputField-box">
+										<img class="icon-18px mr-1" src="image/policy.png"><input type="text" id="todo-date-to" class="inputField inputField-withicon" placeholder="To" />                 
+									</div>
+								</div>
+							</div>	
+							<div><button type="button" class="btn btn-block gilroy-medium btn-fe2f70 px-5">Find</button></div>							
+						</div>						
+					</div>						
+				</div>
+			</div>
+		</div>         
+		<section class="py-5">           
+			<div class="wrapper">		
+				<main>
+					<section class="p-0 mb-4">
+						<div class="trippbo-icon-cards-bar">
+							<div>
+								<div><img src="image/63227.png" /></div>				
+								<div><h4 class="gilroy-semi font-24 text-000941 text-uppercase mb-3">Best Price</h4></div>					
+								<div><p class="gilroy-regular text-000941 font-14">Trippbo is leading tour operator company which assures you only the best prices</p></div>					
+							</div>								
+							<div>
+								<div><img src="image/63226.png" /></div>							
+								<div><h4 class="gilroy-semi font-24 text-000941 text-uppercase mb-3">Hassle Free</h4></div>					
+								<div><p class="gilroy-regular text-000941 font-14">Trippbo make sure to provide you a hassle free booing platform</p></div>					
+							</div>								
+							<div>
+								<div><img src="image/63225.png" /></div>				
+								<div><h4 class="gilroy-semi font-24 text-000941 text-uppercase mb-3">SECURE</h4></div>					
+								<div><p class="gilroy-regular text-000941 font-14">we make sure to keep your private information as confidential!</p></div>					
+							</div>								
+							<div>
+								<div><img src="image/63224.png" /></div>				
+								<div><h4 class="gilroy-semi font-24 text-000941 text-uppercase mb-3">Support</h4></div>					
+								<div><p class="gilroy-regular text-000941 font-14">We are Available 27/7 from Monday to Friday</p></div>					
+							</div>					
+						</div>					
+					</section> 
+					<h2 class="gilroy-semi text-000941 font-32 mb-4">Learn More About US</h2>
+					<section class="p-0 mb-4">
+						<div class="trippbo-cards-bar">
+							<div>
+								<div>				
+									<div>
+										<h4 class="gilroy-medium text-white">Fund My Trips</h4>
+										<p class="gilroy-regular text-white mb-5">Are you eager to travel but hesitant to travel alone? Trippbo has this amazing feature for you to provide you company of travellers. Fund my trips feature enables you to post your trip and invite other travellers to accompany you on the trip. Now your trips are no more tedious; post your trip and select a company of your choice.</p>
+										<div><button type="button" class="btn gilroy-medium">Find</button></div>
+									</div>					
+									<div><img src="image/63235.png" /></div>					
+								</div>								
+							</div>								
+							<div>
+								<div>				
+									<div>
+										<h4 class="gilroy-medium text-white">Fund My Trips SOLO</h4>
+										<p class="gilroy-regular text-white mb-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et</p>
+										<div><button type="button" class="btn gilroy-medium">Find</button></div>
+									</div>					
+									<div><img src="image/63237.png" /></div>					
+								</div>								
+							</div>															
+							<div>
+								<div>				
+									<div>
+										<h4 class="gilroy-medium text-white">Tickets Lottery</h4>
+										<p class="gilroy-regular text-white mb-5">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et</p>
+										<div><button type="button" class="btn gilroy-medium">Find</button></div>
+									</div>					
+									<div><img src="image/63236.png" /></div>					
+								</div>								
+							</div>																		
+						</div>					
+					</section> 					
+					<h2 class="gilroy-semi text-000941 mb-4">Popular Countries</h2>
+					<section class="p-0 mb-4">
+						<div class="trippbo-cards-grid-bar">
+							<div>
+								<figure>
+									<img src="image/images2.png" />
+									<figcaption>Nature</figcaption>
+								</figure>							
+							</div>								
+							<div>
+								<figure>
+									<img src="image/images2.png" />
+									<figcaption>Nature</figcaption>
+								</figure>							
+							</div>								
+							<div>
+								<figure>
+									<img src="image/images2.png" />
+									<figcaption>Nature</figcaption>
+								</figure>							
+							</div>								
+							<div>
+								<figure>
+									<img src="image/images2.png" />
+									<figcaption>Nature</figcaption>
+								</figure>							
+							</div>							
+							<div>
+								<figure>
+									<img src="image/images2.png" />
+									<figcaption>Nature</figcaption>
+								</figure>							
+							</div>								
+							<div>
+								<figure>
+									<img src="image/images2.png" />
+									<figcaption>Nature</figcaption>
+								</figure>							
+							</div>								
+							<div>
+								<figure>
+									<img src="image/images2.png" />
+									<figcaption>Nature</figcaption>
+								</figure>							
+							</div>								
+							<div>
+								<figure>
+									<img src="image/images2.png" />
+									<figcaption>Nature</figcaption>
+								</figure>							
+							</div>																		
+						</div>					
+					</section> 					
+				</main>				
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper mb-3">
+                <div class="column-holder">
+                    <div class="column-medium-6">
+                        <div class="footer-logo">
+                            <img src="image/trippbo-white.svg" />
+                        </div>
+
+                        <div class="social-links margintop-3">
+                            <a href="javascript:void(0)">
+                                <img src="image/fb-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)" class="marginhor-3">
+                                <img src="image/insta-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="image/linkedin-white.svg" style="height: 40px;" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4 class="gilroy-semi">Menu</h4>
+                        <ul class="d-grid grid-columns-auto-1">
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Conditions</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Privacy Policy</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4 class="gilroy-semi">Popular Cities</h4>
+                        <ul class="d-grid grid-columns-auto-2">
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Thailand</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Thailand</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Norway</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Norway</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Pakistan</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Pakistan</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Dubai</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Dubai</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="wrapper">
+                    <div class="column-holder align-items-center justify-content-between">
+                        <div class="column-medium-6">
+                            <p>Subscribe our Newsletter</p>
+                            <div class="newsletter">
+                                <input type="email" placeholder="Email" />
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="column-medium-6 margintop-3 margintop-medium-0 text-white mt-3">
+                            © trippbo.com, Inc. All rights reserved 2021.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.9.0/js/bootstrap-datepicker.min.js"></script> 	
+    <script src="js/custom.js"></script>
+    <script src="js/home.js"></script>	
+	<script>
+	$('#myTab a').on('click', function (event) {
+		event.preventDefault()
+		$(this).tab('show')
+	});
+	</script>
+</body>
+</html>

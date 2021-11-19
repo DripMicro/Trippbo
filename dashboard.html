@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.png"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/dashboard.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://kit.fontawesome.com/aad9309da9.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="wrapper-full">
+            <div class="d-flex space-between vcenter flex-wrap">
+                <button class="icon" onclick="myFunction()"><img src="image/hamburger.svg" style="height: 16px;" /></button>
+                <a href="/" class="brand"><img src="image/trippbo-logo.png"></a>
+                <div class="menus">
+                    <a href="#">BOOK A TRIP</a>
+                    <a href="#">FUND MY TRIP</a>
+                    <a href="#">FUND MY TRIP <span>SOLO</span></a>
+                    <a href="#">TICKETS LOTTERY</a>
+                </div>
+                <div class="headerOpt-right">
+                    <ul>
+                        <li><a href="javascript:void(0)"><img src="image/bell.svg" /></a>
+                        </li>
+                        <li class="messages"><a href="javascript:void(0)">Messages</a></li>
+                        <li class="avatar">
+                            <a href="javascript:void(0)">Ahmad <img src="image/caret-down-white.svg" style="height:14px"></a>
+                            <img src="image/prof-img.png" class="avatar_rounded">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+		<div class="hero-image-container">
+			<div>
+				<aside>
+					<h4 class="gilroy-semi font-34 text-white mb-5 hsm">My Account</h4>
+					<ul class="trippbo-dashboard-aside bg-white">
+						<li>
+							<h3 class="gilroy-semi text-000941 font-20">Dashboard</h3>
+							<p class="gilroy-regular text-000941 font-14 mb-0">Manage Account</p>
+						</li>
+						<li><a href="javascript:void(0)" onclick="open_main();" class="trippbo-dashboard-aside-active"><i class="fas fa-book mr-2"></i> My Bookings</a></li>
+						<li><a href="javascript:void(0)"><i class="fas fa-user-friends mr-2"></i> Passenger</a></li>
+						<li><a href="javascript:void(0)"><i class="fas fa-user-friends mr-2"></i> Discount Vouchers</a></li>
+						<li><a href="javascript:void(0)"><i class="fas fa-envelope mr-2"></i> Newsletter and Preferences</a></li>
+						<li><a href="javascript:void(0)"><i class="fas fa-cog mr-2"></i>  Account Settings</a></li>
+					</ul>				
+				</aside>			
+				<main id="main">
+					<button type="button" onclick="close_main();" class="btn btn-block gilroy-semi text-white text-left font-14 btn-fe2f70 py-3 hlg"><i class="fas fa-arrow-left mr-1"></i> Manage Your Account</button>
+					<h4 class="gilroy-semi">My Upcoming Bookings</h4>
+					<div class="trippbo-dashboard-main">
+						<p class="gilroy-semi font-14">An Overview Of Upcoming Trips</p>
+						<ul class="trippbo-dashboard-main-card">
+							<li>
+								<header>
+									<div><p class="gilroy-semi font-14 mb-0">Booking Number : GHF8392</p></div>
+									<div><span class="gilroy-medium font-12">In 4 Days</span></div>
+								</header>
+								<figure>
+									<img src="image/images2.png" />
+									<figcaption class="gilroy-semi font-16">
+										<h4 class="gilroy-semi font-14 mb-0">Saudi Arabia</h4>
+										<p class="gilroy-medium font-14 mb-0">Mon 3 Aug - Thu 6 Sep 2021, 2 Passenger Economy</p>
+									</figcaption>
+								</figure>
+								<footer>
+									<div><p class="gilroy-semi font-14 mb-0">From: Dubai</p></div>							
+									<div><p class="gilroy-semi font-14 mb-0">To: Saudi Arabia <span>(KSA)</span></p></div>							
+									<div><p class="gilroy-semi font-14 mb-0">Airline refernce: DSS232134</p></div>							
+									<div><a role="button" href="javascript:void(0)" class="btn box-shadow-fe2f70 gilroy-medium btn-fe2f70 px-5">View Booking</a></div>							
+								</footer>								
+							</li>							
+							<li>
+								<header>
+									<div><p class="gilroy-semi font-14 mb-0">Booking Number : GHF8392</p></div>
+									<div><span class="gilroy-medium font-12">In 4 Days</span></div>
+								</header>
+								<figure>
+									<img src="image/images2.png" />
+									<figcaption class="gilroy-semi font-16">
+										<h4 class="gilroy-semi font-14 mb-0">Saudi Arabia</h4>
+										<p class="gilroy-medium font-14 mb-0">Mon 3 Aug - Thu 6 Sep 2021, 2 Passenger Economy</p>
+									</figcaption>
+								</figure>
+								<footer>
+									<div><p class="gilroy-semi font-14 mb-0">From: Dubai</p></div>							
+									<div><p class="gilroy-semi font-14 mb-0">To: Saudi Arabia <span>(KSA)</span></p></div>							
+									<div><p class="gilroy-semi font-14 mb-0">Airline refernce: DSS232134</p></div>							
+									<div><a role="button" href="javascript:void(0)" class="btn box-shadow-fe2f70 gilroy-medium btn-fe2f70 px-5">View Booking</a></div>							
+								</footer>								
+							</li>
+						</ul>
+						<p class="gilroy-semi font-14">An Overview Of Past Trips</p>
+						<ul class="trippbo-dashboard-main-card">
+							<li>
+								<header>
+									<div><p class="gilroy-semi font-14 mb-0">Booking Number : GHF8392</p></div>
+								</header>
+								<figure>
+									<img src="image/images2.png" />
+									<figcaption class="gilroy-semi font-16">
+										<p class="gilroy-medium font-14 mb-0">Mon 3 Aug - Thu 6 Sep 2021, 2 Passenger Economy</p>
+									</figcaption>
+								</figure>
+								<footer>
+									<div><p class="gilroy-semi font-14 mb-0">From: Dubai</p></div>							
+									<div><p class="gilroy-semi font-14 mb-0">To: Saudi Arabia <span>(KSA)</span></p></div>							
+									<div><p class="gilroy-semi font-14 mb-0">Airline refernce: DSS232134</p></div>							
+									<div><a role="button" href="javascript:void(0)" class="btn box-shadow-fe2f70 gilroy-medium btn-fe2f70 px-5">View Booking</a></div>							
+								</footer>								
+							</li>							
+						</ul>						
+					</div>					
+				</main>
+			</div>
+		</div>         
+		<section class="py-5">           
+			<div class="wrapper">		
+				<main>
+				
+				</main>				
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper mb-3">
+                <div class="column-holder">
+                    <div class="column-medium-6">
+                        <div class="footer-logo">
+                            <img src="image/trippbo-white.svg" />
+                        </div>
+
+                        <div class="social-links margintop-3">
+                            <a href="javascript:void(0)">
+                                <img src="image/fb-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)" class="marginhor-3">
+                                <img src="image/insta-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="image/linkedin-white.svg" style="height: 40px;" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4 class="gilroy-semi">Menu</h4>
+                        <ul class="d-grid grid-columns-auto-1">
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Conditions</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Privacy Policy</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4 class="gilroy-semi">Popular Cities</h4>
+                        <ul class="d-grid grid-columns-auto-2">
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Thailand</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Thailand</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Norway</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Norway</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Pakistan</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Pakistan</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Dubai</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Dubai</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="wrapper">
+                    <div class="column-holder align-items-center justify-content-between">
+                        <div class="column-medium-6">
+                            <p>Subscribe our Newsletter</p>
+                            <div class="newsletter">
+                                <input type="email" placeholder="Email" />
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="column-medium-6 margintop-3 margintop-medium-0 text-white mt-3">
+                            © trippbo.com, Inc. All rights reserved 2021.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/dashboard.js"></script>	
+	<script>
+	$('#myTab a').on('click', function (event) {
+		event.preventDefault()
+		$(this).tab('show')
+	});
+	</script>
+</body>
+</html>

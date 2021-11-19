@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cancel Booking</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.png"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/cancel-booking.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/aad9309da9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="wrapper-full">
+            <div class="d-flex space-between vcenter flex-wrap">
+                <button class="icon" onclick="myFunction()"><img src="image/hamburger.svg" style="height: 16px;" /></button>
+                <a href="/" class="brand"><img src="image/trippbo-logo.png"></a>
+                <div class="menus">
+                    <a href="#">BOOK A TRIP</a>
+                    <a href="#">FUND MY TRIP</a>
+                    <a href="#">FUND MY TRIP <span>SOLO</span></a>
+                    <a href="#">TICKETS LOTTERY</a>
+                </div>
+                <div class="headerOpt-right">
+                    <ul>
+                        <li><a href="javascript:void(0)"><img src="image/bell.svg" /></a>
+                        </li>
+                        <li class="messages"><a href="javascript:void(0)">Messages</a></li>
+                        <li class="avatar">
+                            <a href="javascript:void(0)">Ahmad <img src="image/caret-down-white.svg" style="height:14px"></a>
+                            <img src="image/prof-img.png" class="avatar_rounded">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-content"> 
+        <div><button type="button" class="btn gilroy-medium btn-fe2f70 box-shadow-fe2f70 rounded-0 font-12 text-capitalize" data-toggle="modal" data-target="#cancel-booking">Cancel Booking</button></div>
+        <!-- Report this Modal -->
+        <div class="modal fade" id="cancel-booking">
+            <div class="modal-dialog modal-lg modal-dialog-centered">
+                <div class="modal-content rounded-0">
+                    <!-- Modal Header -->
+                    <div class="modal-header border-0 pb-0">
+                        <h4 class="modal-title gilroy-medium font-18 pl-3">Cancel Your Booking</h4>
+                       <button type="button" class="close p-0 m-0" data-dismiss="modal" style="float: none;">&times;</button>
+                    </div>
+                    <!-- Modal body -->
+                    <div class="modal-body">
+                        <div class="bg-fafafa px-4 py-2 mb-3">
+							<div class="img-block">
+                                <div><img src="image/calendar-2.png"></div>
+                                <div>
+                                    <p class="gilroy-semi font-16 text-1f2223 mb-0">Cancelation Policy</p>
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div><p class="gilroy-regular font-14 text-1f2223 mb-0">1x Standard Double Or twin Room</p></div>
+                                        <div><p class="gilroy-extra font-12 text-1f2223 mb-0">Free</p></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr />
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div><p class="gilroy-regular font-12 text-1f2223 mb-0">Total</p></div>
+                                <div><p class="gilroy-extra font-12 text-1f2223 mb-0">Free</p></div>
+                            </div>
+						</div>
+                        <div class="pl-3">
+                            <h4 class="modal-title gilroy-medium font-18 mb-3">Tell Us your reason for Cancelation</h4>
+                            <p class="gilroy-regular font-14">This needed to complete our cancelation</p>
+                            <ul class="list-1">
+                                <li>
+                                    <div class="d-flex mr-2"><label class="custom-radio-btn"><input type="radio" checked="checked" name="reason"><span class="checkmark"></span></label></div>
+                                    <div><p class="gilroy-regular font-14 mb-0">This needed to complete our cancelation</p></div>
+                                </li>
+                                <li>
+                                    <div class="d-flex mr-2"><label class="custom-radio-btn"><input type="radio" name="reason"><span class="checkmark"></span></label></div>
+                                    <div><p class="gilroy-regular font-14 mb-0">Found a different accommodation option</p></div>
+                                </li>
+                                <li>
+                                    <div class="d-flex mr-2"><label class="custom-radio-btn"><input type="radio" name="reason"><span class="checkmark"></span></label></div>
+                                    <div><p class="gilroy-regular font-14 mb-0">Personal reasons/Trip called off</p></div>
+                                </li>
+                                <li>
+                                    <div class="d-flex mr-2"><label class="custom-radio-btn"><input type="radio" name="reason"><span class="checkmark"></span></label></div>
+                                    <div><p class="gilroy-regular font-14 mb-0">Unable to travel due to restrictions related to coronavirus ( COVID-19 )</p></div>
+                                </li>
+                                <li>
+                                    <div class="d-flex mr-2"><label class="custom-radio-btn"><input type="radio" name="reason"><span class="checkmark"></span></label></div>
+                                    <div><p class="gilroy-regular font-14 mb-0">Change of date or destination</p></div>
+                                </li>
+                                <li>
+                                    <div class="d-flex mr-2"><label class="custom-radio-btn"><input type="radio" name="reason"><span class="checkmark"></span></label></div>
+                                    <div><p class="gilroy-regular font-14 mb-0">Change in the number or needs of travelers</p></div>
+                                </li>
+                                <li>
+                                    <div class="d-flex mr-2"><label class="custom-radio-btn"><input type="radio" name="reason"><span class="checkmark"></span></label></div>
+                                    <div><p class="gilroy-regular font-14 mb-0">None of the above</p></div>
+                                </li>
+                            </ul>
+                            <div>
+                                <button type="button" class="btn gilroy-medium font-14 btn-fe2f70 box-shadow-fe2f70 px-4">Yes, Cancel This Booking</button>
+                                <button type="button" class="btn gilroy-medium font-14 btn-white opacity-40 px-4" style="border: 1px solid #23242C!important;">No, I Don't Want To Cancel</button>
+                            </div>
+                            <hr />
+                            <p><span class="gilroy-medium font-18">Change of plans?</span> <span class="gilroy-regular font-14">If You can't stay on these dates anymore, change them to suit you - and keep and keep our booking!</span></p>
+                            <div>
+                                <button type="button" class="btn gilroy-medium font-14 btn-fe2f70 box-shadow-fe2f70 px-4">Change Dates</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>  
+        <footer>
+            <div class="wrapper mb-3">
+                <div class="column-holder">
+                    <div class="column-medium-6">
+                        <div class="footer-logo">
+                            <img src="image/trippbo-white.svg" />
+                        </div>
+
+                        <div class="social-links margintop-3">
+                            <a href="javascript:void(0)">
+                                <img src="image/fb-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)" class="marginhor-3">
+                                <img src="image/insta-white.svg" style="height: 40px;" />
+                            </a>
+                            <a href="javascript:void(0)">
+                                <img src="image/linkedin-white.svg" style="height: 40px;" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4 class="gilroy-semi">Menu</h4>
+                        <ul class="d-grid grid-columns-auto-1">
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Conditions</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Privacy Policy</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4 class="gilroy-semi">Popular Cities</h4>
+                        <ul class="d-grid grid-columns-auto-2">
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Thailand</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Thailand</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Norway</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Norway</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Pakistan</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Pakistan</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Dubai</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Dubai</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="wrapper">
+                    <div class="column-holder align-items-center justify-content-between">
+                        <div class="column-medium-6">
+                            <p>Subscribe our Newsletter</p>
+                            <div class="newsletter">
+                                <input type="email" placeholder="Email" />
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="column-medium-6 margintop-3 margintop-medium-0 text-white mt-3">
+                            © trippbo.com, Inc. All rights reserved 2021.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>	
+    <script>
+	$('#myTab a').on('click', function (event) {
+		event.preventDefault()
+		$(this).tab('show')
+	});
+	</script>
+</body>
+</html>

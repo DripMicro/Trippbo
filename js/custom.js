@@ -8,13 +8,40 @@ function myFunction() {
         x.className = "topnav";
     }
 }
-
+function openCity(evt, cityName) {
+	var i, x, tablinks;
+	x = document.getElementsByClassName("city");
+	for (i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	tablinks = document.getElementsByClassName("tablink");
+	for (i = 0; i < x.length; i++) {
+		tablinks[i].className = tablinks[i].className.replace(" trippbo-active", "");
+	}
+	document.getElementById(cityName).style.display = "block";
+	evt.currentTarget.className += " trippbo-active";
+}
+function getRadioValue() {
+	var radio = document.getElementsByName('car');
+	for(i = 0; i < radio.length; i++) {
+		if(radio[i].checked)
+		alert(radio[i].value);
+	}
+}
 $(document).ready(function(){
     $('#DateFrom').datepicker({
         autoclose: true,
         format: "dd/mm/yyyy"
     });
     $('#DateTo').datepicker({
+        autoclose: true,
+        format: "dd/mm/yyyy"
+    });   
+	$('#todo-date-from').datepicker({
+        autoclose: true,
+        format: "dd/mm/yyyy"
+    });
+    $('#todo-date-to').datepicker({
         autoclose: true,
         format: "dd/mm/yyyy"
     });

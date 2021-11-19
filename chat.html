@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.png"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/chat.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="wrapper-full">
+            <div class="d-flex space-between vcenter flex-wrap">
+                <button class="icon" onclick="myFunction()"><img src="image/hamburger.svg" style="height: 16px;" /></button>
+                <a href="/" class="brand"><img src="image/trippbo-logo.png"></a>
+                <div class="menus">
+                    <a href="#">BOOK A TRIP</a>
+                    <a href="#">FUND MY TRIP</a>
+                    <a href="#">FUND MY TRIP <span>SOLO</span></a>
+                    <a href="#">TICKETS LOTTERY</a>
+                </div>
+                <div class="headerOpt-right">
+                    <ul>
+                        <li><a href="javascript:void(0)"><img src="image/bell.svg"></a></li>
+                        <li class="messages"><a href="javascript:void(0)">Messages</a></li>
+                        <li class="avatar">
+                            <a href="javascript:void(0)">Ahmad <img src="image/caret-down-white.svg" style="height:14px" /></a>
+                            <img src="image/prof-img.png" class="avatar_rounded">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+        <section class="pb-5">
+            <div class="wrapper">
+                <div class="breadcrumb_ mb-4">
+                    <ol class="">
+                        <li class="breadcrumb-item">
+                            <a>Chat</a>
+                        </li>
+                        <li class="breadcrumb-item active">Jimmy Chamber</li>
+                    </ol>
+                </div>
+                <div class="grid-1">
+                    <div id="chatlist">
+                        <div class="chat-head d-flex align-items-center justify-content-between p-3">
+                            <div class="grid-2-dropdown">
+                                <span class="gilroy-regular font-16 dropdown-1" onclick="openAllConservation()">All Conservation</span> <span class="gilroy-regular font-16">(2)</span> <i class="fa fa-caret-down" aria-hidden="true"></i>
+                                <div id="dropdown-1" style="display: none;">
+                                    <p class="gilroy-semi font-14">All Conversations</p>
+                                    <div>
+                                        <button>All</button>
+                                        <button class="unread">
+                                            <span>Unread</span>
+                                            <span class="count">(1)</span>
+                                        </button>
+                                        <button>Read</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="d-flex"><img class="icon-20px" src="image/63712.png" alt="" /></div>
+                        </div>
+                        <!-- chat list -->
+                        <ul class="chat-list">
+                            <li onclick="open_chatbox();" class="active">
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="mr-3"><span class="chat-avatar"><img class="icon-46px" src="image/ellipse-33.png" alt="" /> <span class="chat-avatar-online"></span></span></div>
+                                            <div>
+                                                <p class="gilroy-medium font-16 mb-0">Jimmy Chamber</p>
+                                                <p class="gilroy-regular text-23242c opacity-50 font-12 mb-0">Tell What time is it</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="gilroy-regular text-000941 font-10 mb-1">Fri 24</p>
+                                        <p class="unread gilroy-medium font-10 mb-0"><span>2</span></p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="mr-3"><span class="chat-avatar"><img class="icon-46px" src="image/rily.png" alt="" /> <span class="chat-avatar-online"></span></span></div>
+                                            <div>
+                                                <p class="gilroy-medium font-16 mb-0">Jessica Rily</p>
+                                                <p class="gilroy-regular text-23242c opacity-50 font-12 mb-0">Tell What time is it</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="gilroy-regular text-000941 font-10 mb-1">Fri 24</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="mr-3"><span class="chat-avatar"><img class="icon-46px" src="image/cheerful-curly-business-girl-wearing-glasses.png" alt="" /> <span class="chat-avatar-online"></span></span></div>
+                                            <div>
+                                                <p class="gilroy-medium font-16 mb-0">Laila Page</p>
+                                                <p class="gilroy-regular text-23242c opacity-50 font-12 mb-0">Tell What time is it</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="gilroy-regular text-000941 font-10 mb-1">Fri 24</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="mr-3"><span class="chat-avatar"><img class="icon-46px" src="image/pensive-male-customer-looking-away.png" alt="" /> <span class="chat-avatar-online"></span></span></div>
+                                            <div>
+                                                <p class="gilroy-medium font-16 mb-0">James Dunn</p>
+                                                <p class="gilroy-regular text-23242c opacity-50 font-12 mb-0">Tell What time is it</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="gilroy-regular text-000941 font-10 mb-1">Fri 24</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="mr-3"><span class="chat-avatar"><img class="icon-46px" src="image/rily.png" alt="" /> <span class="chat-avatar-offline"></span></span></div>
+                                            <div>
+                                                <p class="gilroy-medium font-16 mb-0">Jeremy Myres</p>
+                                                <p class="gilroy-regular text-23242c opacity-50 font-12 mb-0">Tell What time is it</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="gilroy-regular text-000941 font-10 mb-1">Fri 24</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="d-flex justify-content-between">
+                                    <div>
+                                        <div class="d-flex align-items-center">
+                                            <div class="mr-3"><span class="chat-avatar"><img class="icon-46px" src="image/rily.png" alt="" /> <span class="chat-avatar-offline"></span></span></div>
+                                            <div>
+                                                <p class="gilroy-medium font-16 mb-0">Aamir Perez</p>
+                                                <p class="gilroy-regular text-23242c opacity-50 font-12 mb-0">Tell What time is it</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <p class="gilroy-regular text-000941 font-10 mb-1">Fri 24</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div id="chatbox">
+                        <div class="chat-head">
+                            <div class="d-flex align-items-center justify-content-between">
+                                <div>
+                                    <div class="d-flex align-items-center">
+                                        <div class="arrow-left hlg"><button class="p-2" onclick="close_chatbox();"><i class="fa fa-arrow-left font-22 text-000941" aria-hidden="true"></i></div>
+                                        <div><span class="chat-avatar"><img class="icon-40px" src="image/ellipse-33.png" alt="" /> <span class="chat-avatar-online"></span></span> <span class="gilroy-medium font-16">Jimmy Chamber</span></div>
+                                    </div>
+                                </div>
+                                <div class="grid-2">
+                                    <div><button class="p-2"><img class="icon-20px" src="image/63718.png" alt="" /></div>
+                                    <div><button class="p-2"><img class="icon-20px" src="image/63717.png" alt="" /></div>
+                                    <div><button class="p-2"><img class="icon-20px" src="image/63713.png" alt="" /></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- chat comments -->
+                        <div class="chat-grid">
+                            <ul class="chat-messages">
+                                <li class="chat-list chat-left">
+                                    <div>
+                                        <div class="chat-avatar"><img src="image/rily.png" alt="" /></div>
+                                        <div class="chat-comment">
+                                            <div>Praesent orci ipsum, laoreet quis semper sit amet, posuere at enim. Aliquam eu nulla sit amet magna rutrum lobortis vel sit amet sapien Praesent orci ipsum, laoreet quis semper sit amet, posuere at enim.</div>
+                                        </div>
+                                        <div class="chat-time"><span>12:00</span></div>
+                                    </div>
+                                    
+                                </li>
+                                <li class="chat-list chat-right">
+                                    <div>
+                                        <div class="chat-avatar"><img src="image/rily.png" alt="" /></div>
+                                        <div class="chat-comment">
+                                            <div>Praesent orci ipsum, laoreet quis semper sit amet, posuere at enim. Aliquam eu nulla sit amet magna rutrum lobortis vel sit amet sapien Praesent orci ipsum, laoreet quis semper sit amet, posuere at enim</div>
+                                        </div>
+                                        <div class="chat-time"><span>12:00</span></div>
+                                    </div>
+                                </li>
+                                <li class="chat-list chat-left">
+                                    <div>
+                                        <div class="chat-avatar"><img src="image/rily.png" alt="" /></div>
+                                        <div class="chat-image">
+                                            <img src="image/image3.png" alt="" />
+                                        </div>
+                                        <div class="chat-time"><span>12:00</span></div>
+                                    </div>
+                                    
+                                </li>
+                                <li class="chat-list chat-right">
+                                    <div>
+                                        <div class="chat-avatar"><img src="image/rily.png" alt="" /></div>
+                                        <div class="chat-comment">
+                                            <div>Praesent orci ipsum, laoreet quis semper sit amet, posuere at enim. Aliquam eu nulla sit amet magna rutrum lobortis vel sit amet sapien Praesent orci ipsum, laoreet quis semper sit amet, posuere at enim</div>
+                                        </div>
+                                        <div class="chat-time"><span>12:00</span></div>
+                                    </div>
+                                </li>
+                            </ul>                                
+                        </div>
+                        <!-- adding comment -->
+                        <div class="adding-box">
+                            <div><button><img src="image/63714.png" alt="" /></div>
+                            <div><button><img src="image/63715.png" alt="" /></div>
+                            <div><input type="text" placeholder="Write here" /></div>
+                            <div><button><img src="image/63716.png" alt="" /></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- chat popup -->
+                <div id="chat-popup" class="chat-popup">
+                    <div class="chat-popup-head d-flex align-items-center justify-content-between">
+                        <div onclick="toggleChatPopup();">
+                            <div class="d-flex align-items-center">
+                                <div class="arrow-left hlg"><button class="p-2" onclick="close_chatbox();"><i class="fa fa-arrow-left font-22 text-000941" aria-hidden="true"></i></button></div>
+                                <div><span class="chat-avatar"><img class="icon-40px" src="image/ellipse-33.png" alt=""> <span class="chat-avatar-online"></span></span> <span class="gilroy-semi font-14">Jimmy Chamber</span></div>
+                            </div>
+                        </div>
+                        <div class="chat-popup-grid-1">
+                            <div><button class="phone"><img src="image/63718.png" alt="" /></button></div>
+                            <div><button class="camera"><img src="image/63717.png" alt="" /></button></div>
+                            <div onclick="toggleChatPopup();"><button class="minimize"><img src="image/33.png" alt="" /></button></div>
+                            <div onclick="closeChatPopup();"><button class="cross"><img src="image/928.png" alt="" /></button></div>
+                        </div>
+                    </div>
+                    <div id="chat-popup-container">
+                        <div class="chat-popup-container">
+                            <ul>
+                                <li class="chat-list chat-left">
+                                    <div>
+                                        <div class="chat-avatar"><img src="image/rily.png" alt=""></div>
+                                        <div class="chat-comment">
+                                            <div>Praesent orci ipsum, laoreet quis semper sit amet, posuere at enim. Aliquam eu nulla sit amet magna rutrum lobortis vel sit amet sapien Praesent orci ipsum, laoreet quis semper sit amet, posuere at enim.</div>
+                                        </div>
+                                        <div class="chat-time"><span>12:00</span></div>
+                                    </div>
+                                    
+                                </li>
+                                <li class="chat-list chat-right">
+                                    <div>
+                                        <div class="chat-avatar"><img src="image/rily.png" alt=""></div>
+                                        <div class="chat-comment">
+                                            <div>Praesent orci ipsum, laoreet quis semper sit amet, posuere at enim. Aliquam eu nulla sit amet magna rutrum lobortis vel sit amet sapien Praesent orci ipsum, laoreet quis semper sit amet, posuere at enim</div>
+                                        </div>
+                                        <div class="chat-time"><span>12:00</span></div>
+                                    </div>
+                                </li>
+                                <li class="chat-list chat-left">
+                                    <div>
+                                        <div class="chat-avatar"><img src="image/rily.png" alt=""></div>
+                                        <div class="chat-image">
+                                            <img src="image/image3.png" alt="">
+                                        </div>
+                                        <div class="chat-time"><span>12:00</span></div>
+                                    </div>
+                                    
+                                </li>
+                                <li class="chat-list chat-right">
+                                    <div>
+                                        <div class="chat-avatar"><img src="image/rily.png" alt=""></div>
+                                        <div class="chat-comment">
+                                            <div>Praesent orci ipsum, laoreet quis semper sit amet, posuere at enim. Aliquam eu nulla sit amet magna rutrum lobortis vel sit amet sapien Praesent orci ipsum, laoreet quis semper sit amet, posuere at enim</div>
+                                        </div>
+                                        <div class="chat-time"><span>12:00</span></div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    <div class="chat-popup-foot">
+                        <div><button><img src="image/63714.png" alt=""></button></div>
+                        <div><button><img src="image/63715.png" alt=""></button></div>
+                        <div><input type="text" placeholder="Write here"></div>
+                        <div><button><img src="image/63716.png" alt=""></button></div>
+                    </div>
+                    </div>
+                </div>					
+                <!-- chat list popup -->
+                <div id="chat-list-popup" class="chat-list-popup">
+                    <div class="chat-list-popup-head d-flex align-items-center justify-content-between">
+                        <div onclick="toggleChatListPopup();">
+                            <p class="gilroy-semi text-white font-14 mb-0 pr-5 py-2">Chat</p>
+                        </div>
+                        <div class="chat-list-popup-grid-1">
+                            <div><button class="edit"><img src="image/64465.png" alt="" /></button></div>
+                            <div><button class="add"><img src="image/64466.png" alt="" /></button></div>
+                            <div><button class="setting"><img src="image/64467.png" alt="" /></button></div>
+                        </div>
+                    </div>
+                    <div id="chat-list-popup-container">
+                        <div class="chat-list-popup-container">
+                            <p class="gilroy-semi font-16 text-23242c">Contacts</p>
+                            <ul class="chat-list-popup-list-1">
+                                <li>
+                                    <div><span class="avatar"><img class="icon-32px" src="image/ellipse-33.png" alt="" /> <span class="avatar-online"></span></span> <span class="gilroy-semi text-23242c font-14">Alina John</span></div>
+                                    <div><span class="badge gilroy-regular font-10 text-000941">4</span></div>
+                                </li>
+                                <li>
+                                    <div><span class="avatar"><img class="icon-32px" src="image/ellipse-33.png" alt="" /> <span class="avatar-online"></span></span> <span class="gilroy-semi text-23242c font-14">Emony</span></div>
+                                </li>
+                                <li>
+                                    <div><span class="avatar"><img class="icon-32px" src="image/ellipse-33.png" alt="" /> <span class="avatar-offline"></span></span> <span class="gilroy-semi text-23242c font-14">Emony</span></div>
+                                </li>
+                            </ul>
+                            <p class="gilroy-semi font-16 text-23242c">Group Conservations</p>
+                            <ul class="chat-list-popup-list-1">
+                                <li>
+                                    <div>
+                                        <div class="group-avatar">
+                                            <div><img src="image/ellipse-33.png" alt="" /></div>
+                                            <div><img src="image/rily.png" alt="" /></div>
+                                            <div><img src="image/cheerful-curly-business-girl-wearing-glasses.png" alt="" /></div>
+                                            <div><span>+22</span></div>
+                                        </div>
+                                        <span class="gilroy-semi text-23242c font-14">Traveling Group</span>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div><span class="avatar"><img class="icon-32px" src="image/64471.png" alt="" /></span> <span class="gilroy-semi text-23242c font-14">Create New Group</span></div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="chat-list-popup-foot">
+                            <div><img src="image/64472.png" alt="" /></div>
+                            <div><input type="text" placeholder="Search"></div>
+                        </div>
+                    </div>
+                </div>					
+            </div>
+        </section>
+        <footer>
+            <div class="wrapper">
+                <div class="column-holder">
+                    <div class="column-medium-6">
+                        <div class="footer-logo"><img src="image/trippbo-white.svg" /></div>
+                        <div class="social-links margintop-3">
+                            <a href="javascript:void(0)"><img class="icon-40px" src="image/fb-white.svg" /></a>
+                            <a href="javascript:void(0)" class="marginhor-3"><img class="icon-40px" src="image/insta-white.svg" /></a>
+                            <a href="javascript:void(0)"><img class="icon-40px" src="image/linkedin-white.svg" /></a>
+                        </div>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4>Menu</h4>
+                        <ul>
+                            <li>Conditions</li>
+                            <li>Privacy Policy</li>
+                            <li>About Us</li>
+                        </ul>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4>Popular Cities</h4>
+                        <ul>
+                            <li class="inline-block half-width">Thailand</li>
+                            <li class="inline-block half-width">Thailand</li>
+                            <li class="inline-block half-width">Norway</li>
+                            <li class="inline-block half-width">Norway</li>
+                            <li class="inline-block half-width">Pakistan</li>
+                            <li class="inline-block half-width">Pakistan</li>
+                            <li class="inline-block half-width">Dubai</li>
+                            <li class="inline-block half-width">Dubai</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="wrapper">
+                    <div class="column-holder">
+                        <div class="column-medium-6">
+                            <p>Subscribe our Newsletter</p>
+                            <div class="position-relative newsletter">
+                                <input type="email" placeholder="Email" />
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="column-medium-6 margintop-3 margintop-medium-0" style="align-self: flex-end;">© trippbo.com, Inc. All rights reserved 2021.</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="js/chat.js"></script>
+	<script src="js/custom.js"></script>
+    <script>
+	$('#myTab a').on('click', function (event) {
+		event.preventDefault()
+		$(this).tab('show')
+	});
+	</script>
+</body>
+</html>

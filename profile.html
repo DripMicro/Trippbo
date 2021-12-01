@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="./image/favicon.png"> -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/aad9309da9.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="topnav" id="myTopnav">
+        <div class="wrapper-full">
+            <div class="d-flex space-between vcenter flex-wrap">
+                <button class="icon" onclick="myFunction()"><img src="image/hamburger.svg" style="height: 16px;" /></button>
+                <a href="/" class="brand"><img src="image/trippbo-logo.png"></a>
+                <div class="menus">
+                    <a href="#">BOOK A TRIP</a>
+                    <a href="#">FUND MY TRIP</a>
+                    <a href="#">FUND MY TRIP <span>SOLO</span></a>
+                    <a href="#">TICKETS LOTTERY</a>
+                </div>
+                <div class="headerOpt-right">
+                    <ul>
+                        <li><a href="javascript:void(0)"><img src="image/bell.svg" /></a></li>
+                        <li class="messages"><a href="javascript:void(0)">Messages</a></li>
+                        <li class="avatar">
+                            <a href="javascript:void(0)">Ahmad <img src="image/caret-down-white.svg" style="height:14px"></a>
+                            <img src="image/prof-img.png" class="avatar_rounded">
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="body-content">
+        <section class="pb-5">
+            <div class="wrapper">
+                <div class="breadcrumb_ mb-4">
+                    <ol class="">
+                        <li class="breadcrumb-item"><a>My Account</a></li>
+                        <li class="breadcrumb-item active">Profile</li>
+                    </ol>
+                </div>
+                <div class="flex-1 bg-f9f9f9 p-4 mb-3">
+                    <div><img src="image/ahmad.png" alt="" /></div>
+                    <div>
+                        <div class="d-flex align-items-center mb-2">
+                            <div class="mr-5"><h4 class="gilroy-semi text-uppercase text-23242c font-22 mb-0">John Doe</h4></div>
+                            <div><i class="fas fa-edit font-20 text-000941 cursor-pointer"></i></div>
+                        </div>
+                        <div class="mb-5"><span class="verification-tag gilroy-regular rounded-pill font-12">Verified</span></div>
+                        <div class="flex-2 d-flex">
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+									<img class="icon-18px mr-1" src="image/location.png"> 
+									<span class="gilroy-medium font-12 line-height-21px text-23242c">Email</span>
+								</div>
+                                <p class="gilroy-medium font-12 mb-0">janinemuster@gmail.com</p>
+                            </div>
+                            <div>
+                                <div class="d-flex align-items-center mb-2">
+									<img class="icon-18px mr-1" src="image/location.png"> 
+									<span class="gilroy-medium font-12 line-height-21px text-23242c">Phone No</span>
+								</div>
+                                <p class="gilroy-medium font-12 mb-0">+95 545 5545475</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trippbo-bar trippbo-bar-padding gilroy-regular border font-14">						
+                    <button class="tablink d-flex flex-row-responsive align-items-center trippbo-active" onclick="openCity(event,'about');"><span>About</span></button>
+                    <button class="tablink d-flex flex-row-responsive align-items-center" onclick="openCity(event,'gallery');"><span>Gallery</span></button>
+                    <button class="tablink d-flex flex-row-responsive align-items-center" onclick="openCity(event,'upcoming-trips');"><span>Upcoming Trips</span></button>
+                    <button class="tablink d-flex flex-row-responsive align-items-center" onclick="openCity(event,'previuos-trips');"><span>Previuos Trips</span></button>
+                    <button class="tablink d-flex flex-row-responsive align-items-center" onclick="openCity(event,'manage-bookings');"><span>Manage Bookings</span></button>						
+                </div>
+                <div id="about" class="p-3 city">
+                    <p class="gilroy-regular font-14">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.orem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed di</p>							
+                </div>
+                <div id="gallery" class="pt-3 city" style="display:none">
+                    <div class="grid-1">
+                        <div><img src="image/63235.png" alt="" /></div>
+                        <div><img src="image/63235.png" alt="" /></div>
+                        <div><img src="image/63235.png" alt="" /></div>
+                        <div><img src="image/63235.png" alt="" /></div>
+                        <div><img src="image/63235.png" alt="" /></div>
+                        <div><img src="image/63235.png" alt="" /></div>
+                        <div><img src="image/63235.png" alt="" /></div>
+                        <div><img src="image/63235.png" alt="" /></div>
+                    </div>
+                </div>							
+                <div id="upcoming-trips" class="p-3 city" style="display:none">
+                    <div class="flex-3">
+                        <div>
+                            <div class="d-flex">
+                                <div class="mr-3"><p class="gilroy-semi font-14 text-000941 mb-0">Dubai (DXB)</p></div>
+                                <div class="d-flex"><span class="verification-tag gilroy-regular font-12">Upcoming</span></div>
+                            </div>
+                            <p class="gilroy-medium font-10 text-23242c opacity-40 mb-3">ID #113213423</p>
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex"><img src="image/policy.png" class="icon-16px mr-1"></div>
+                                <div><span class="gilroy-medium text-000941 font-14 mr-2">24/05/2021</span></div>
+                                <div><span class="gilroy-medium text-000941 font-14 mr-2">-</span></div>
+                                <div><span class="gilroy-medium text-000941 font-14">24/06/2021</span></div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="d-flex">
+                                <div class="mr-3"><p class="gilroy-semi font-14 text-000941 mb-0">Rixos Hotel Egypt</p></div>
+                                <div class="d-flex"><span class="verification-tag gilroy-regular font-12">Upcoming</span></div>
+                            </div>
+                            <p class="gilroy-medium font-10 text-23242c opacity-40 mb-3">ID #113213423</p>
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex"><img src="image/policy.png" class="icon-16px mr-1"></div>
+                                <div><span class="gilroy-medium text-000941 font-14 mr-2">24/05/2021</span></div>
+                                <div><span class="gilroy-medium text-000941 font-14 mr-2">-</span></div>
+                                <div><span class="gilroy-medium text-000941 font-14">24/06/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>							
+                <div id="previuos-trips" class="p-3 city" style="display:none">
+                    <div class="flex-3">
+                        <div>
+                            <div class="d-flex">
+                                <div class="mr-3"><p class="gilroy-semi font-14 text-000941 mb-0">Dubai (DXB)</p></div>
+                                <div class="d-flex"><span class="verification-tag gilroy-regular font-12">Upcoming</span></div>
+                            </div>
+                            <p class="gilroy-medium font-10 text-23242c opacity-40 mb-3">ID #113213423</p>
+                            <div class="d-flex align-items-center">
+                                <div class="d-flex"><img src="image/policy.png" class="icon-16px mr-1"></div>
+                                <div><span class="gilroy-medium text-000941 font-14 mr-2">24/05/2021</span></div>
+                                <div><span class="gilroy-medium text-000941 font-14 mr-2">-</span></div>
+                                <div><span class="gilroy-medium text-000941 font-14">24/06/2021</span></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="manage-bookings" class="pt-3 city" style="display:none">
+                    <h4>Manage Bookings</h4>							
+                </div>				
+            </div>
+        </section>         
+        <footer>
+            <div class="wrapper mb-3">
+                <div class="column-holder">
+                    <div class="column-medium-6">
+                        <div class="footer-logo"><img src="image/trippbo-white.svg" /></div>
+                        <div class="social-links margintop-3">
+                            <a href="javascript:void(0)"><img src="image/fb-white.svg" style="height: 40px;" /></a>
+                            <a href="javascript:void(0)" class="marginhor-3"><img src="image/insta-white.svg" style="height: 40px;" /></a>
+                            <a href="javascript:void(0)"><img src="image/linkedin-white.svg" style="height: 40px;" /></a>
+                        </div>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4 class="gilroy-semi">Menu</h4>
+                        <ul class="d-grid grid-columns-auto-1">
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Conditions</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Privacy Policy</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">About Us</a></li>
+                        </ul>
+                    </div>
+                    <div class="column-medium-3">
+                        <h4 class="gilroy-semi">Popular Cities</h4>
+                        <ul class="d-grid grid-columns-auto-2">
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Thailand</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Thailand</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Norway</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Norway</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Pakistan</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Pakistan</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Dubai</a></li>
+                            <li><a class="btn btn-link gilroy-regular text-white font-12 p-0" href="#">Dubai</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="copyright">
+                <div class="wrapper">
+                    <div class="column-holder align-items-center justify-content-between">
+                        <div class="column-medium-6">
+                            <p>Subscribe our Newsletter</p>
+                            <div class="newsletter">
+                                <input type="email" placeholder="Email" />
+                                <button>Subscribe</button>
+                            </div>
+                        </div>
+                        <div class="column-medium-6 margintop-3 margintop-medium-0 text-white mt-3">
+                            © trippbo.com, Inc. All rights reserved 2021.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/profile.js"></script>
+	<script>
+	$('#myTab a').on('click', function (event) {
+		event.preventDefault()
+		$(this).tab('show')
+	});
+	</script>
+</body>
+</html>

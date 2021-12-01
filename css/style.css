@@ -82,24 +82,20 @@ h5,
 h6 {
     font-family: "Gilroy-Regular";
 }
-
 img {
     vertical-align: middle;
     border-style: none;
     max-width: 100%;
     height: auto;
 }
-
 p {
     font-size: 14px;
     margin-top: 0;
     margin-bottom: 16px;
 }
-
 section {
     padding: 20px 0;
 }
-
 .wrapper {
     width: 100%;
     padding-right: 15px;
@@ -107,31 +103,24 @@ section {
     margin-right: auto;
     margin-left: auto;
 }
-
 .half-width{
     width:49%
 }
-
 .inline-block{
     display: inline-block !important;
 }
-
 .flex {
     display: flex;
 }
-
 .space-between {
     justify-content: space-between;
 }
-
 .vcenter {
     align-items: center;
 }
-
 .flex-wrap {
     flex-wrap: wrap;
 }
-
 .topnav {
     position: fixed;
     background-color: #000941;
@@ -139,18 +128,15 @@ section {
     z-index: 21;
     box-shadow: 0px 2px 7px rgb(0 0 0 / 11%);
 }
-
 .transparent-bg {
     background: transparent !important;
 }
-
 .topnav .icon{
     border: 0;
     background: transparent;
     font-size: 18px;
     color: #606060;
 }
-
 .topnav a {
     color: #fff;
     text-align: center;
@@ -246,6 +232,22 @@ section {
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
 }
+.input-box .input-label {
+    position: absolute;
+    top: -8px;
+    left: 20px;
+    background-color: #fff;
+    padding: 0 5px;
+}
+.input-box .input-btn {
+    position: absolute;
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    right: 6px;
+    width: 120px;
+    height: 32px;
+}
 .input-box .icon-left {
     left: 15px;
 }
@@ -282,11 +284,11 @@ section {
     transform: translateY(-50%);
 }
 .inputField-box span {
-	position: absolute;
-    font-size: 18px;
+    position: absolute;
     top: -8px;
-    left: 20px;
+    left: 15px;
     background-color: #fff;
+    padding: 0 5px;
 }
 .icon-right > img {
     position: absolute;
@@ -1114,12 +1116,23 @@ footer .copyright{
 	border-radius: unset !important;
 }
 .btn-fe2f70:hover {
-    color: #fff !important;
     background-color: #ef1e60 !important;
     border-color: #ef1e60 !important;
 }
 .box-shadow-fe2f70 {
 	box-shadow: 0px 0px 29px -10px #fe2f70;
+}
+.btn-d2d2d2 {
+    color: #fff !important;
+    background-color: #d2d2d2 !important;
+    border-color: #d2d2d2 !important;
+}
+.btn-d2d2d2:hover {
+    background-color: #c2bfbf !important;
+    border-color: #c2bfbf !important;
+}
+.box-shadow-d2d2d2 {
+	box-shadow: 0px 0px 29px -10px #d2d2d2;
 }
 .btn-outline-fe2f70 {
 	color: #fe2f70!important;
@@ -1583,7 +1596,8 @@ span.badge-green {
 .bell-dropdown > .bell-dropdown-content > div::-webkit-scrollbar-thumb, .chat-list-popup-container::-webkit-scrollbar-thumb {
     background: rgb(210, 210, 210, 0.6); 
     border-radius: 5px;
-}	
+}
+.cg-10 { column-gap: 10px; }	
 @media (min-width: 576px) {
     .column-small {
         -ms-flex-preferred-size: 0;
@@ -3740,7 +3754,7 @@ select.inputField {
 	-moz-appearance: none;
 	appearance: none;
 	background: url(../image/angle-down.png) calc(100% - 10px) center no-repeat;
-    background-size: 24px 24px;		
+    background-size: 20px 20px;		
 }
 /* CAUTION: IE hackery ahead */
 select.inputField::-ms-expand { 

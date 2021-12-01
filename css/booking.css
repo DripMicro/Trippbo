@@ -1,0 +1,19 @@
+
+@media (max-width: 768px) {
+   
+    .grid-1 {
+        display: grid;
+        grid-template-columns: auto;
+        row-gap: 20px;
+    }
+
+}
+@media (min-width: 769px) {
+
+.grid-1 {
+    display: grid;
+    grid-template-columns: 60% 40%;
+    column-gap: 20px;
+}
+
+}

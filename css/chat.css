@@ -281,9 +281,10 @@ div.grid-2-dropdown button:hover {
     border-radius: 15px 15px 0px 0px;
     padding: 0.5rem 1rem;
     height: 58px;
-}
-.chat-popup-head > div:nth-of-type(1) {
     cursor: pointer;
+}
+.chat-popup-head > div:first-child {
+    flex: 1;
 }
 #chat-popup-container {
     display: none;
@@ -485,9 +486,10 @@ div.grid-2-dropdown button:hover {
     padding: 0.5rem 1rem;
     background-color: #fe2f70;
     height: 58px;
-}
-.chat-list-popup-head > div:nth-of-type(1) {
     cursor: pointer;
+}
+.chat-list-popup-head > div:first-child {
+    flex: 1;
 }
 #chat-list-popup-container {
     display: none;
